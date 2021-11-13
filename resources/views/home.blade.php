@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('user.layouts.main')
 
 <!-- ======= Hero Section ======= -->
 <section id="hero">
@@ -41,50 +41,8 @@
 
 <main id="main">
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-    <div class="container-fluid">
-
-      <div class="row">
-        <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"
-          data-aos="fade-right">
-          
-        </div>
-        <div
-          class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
-          data-aos="fade-left">
-          <h3>Kenapa Top Up Pulsa di MauPulsa?</h3>
-          <p>Nikmati kemudahan transaksi dimana saja dan kapan saja dari genggaman anda.</p>
-
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon"><i class="far fa-thumbs-up"></i></div>
-            <h4 class="title"><a href="">Praktis</a></h4>
-            <p class="description"> Kapanpun dan dimanapun, nikmati beragam transaksi dapat dilakukan melalui website
-              atau aplikasi. </p>
-          </div>
-
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon"><i class="fas fa-wifi"></i></div>
-            <h4 class="title"><a href="">Online 24 Jam</a></h4>
-            <p class="description"> Jam berapa pun kamu butuh pulsa, kapan pun dan di mana pun kamu memerlukannya,
-              sistem kami Online 24 jam </p>
-          </div>
-
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon"><i class="fas fa-user-shield"></i></div>
-            <h4 class="title"><a href="">Aman</a></h4>
-            <p class="description"> Pulsa Online memastikan semua informasi yang ada terjaga aman dalam setiap
-              transaksi. </p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End About Section -->
-
-  <!-- ======= Features Section ======= -->
-  <section id="product" class="features">
+  <!-- ======= Product Section ======= -->
+  <section id="product" class="features mt-4">
     <div class="container">
 
       <div class="section-title" data-aos="fade-up">
@@ -147,6 +105,48 @@
     </div>
   </section>
   <!-- End Features Section -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"
+          data-aos="fade-right">
+          
+        </div>
+        <div
+          class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
+          data-aos="fade-left">
+          <h3>Kenapa Top Up Pulsa di MauPulsa?</h3>
+          <p>Nikmati kemudahan transaksi dimana saja dan kapan saja dari genggaman anda.</p>
+
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon"><i class="far fa-thumbs-up"></i></div>
+            <h4 class="title"><a href="">Praktis</a></h4>
+            <p class="description"> Kapanpun dan dimanapun, nikmati beragam transaksi dapat dilakukan melalui website
+              atau aplikasi. </p>
+          </div>
+
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon"><i class="fas fa-wifi"></i></div>
+            <h4 class="title"><a href="">Online 24 Jam</a></h4>
+            <p class="description"> Jam berapa pun kamu butuh pulsa, kapan pun dan di mana pun kamu memerlukannya,
+              sistem kami Online 24 jam </p>
+          </div>
+
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon"><i class="fas fa-user-shield"></i></div>
+            <h4 class="title"><a href="">Aman</a></h4>
+            <p class="description"> Pulsa Online memastikan semua informasi yang ada terjaga aman dalam setiap
+              transaksi. </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
 
   <!-- ======= Details Section ======= -->
   <section id="details" class="details">

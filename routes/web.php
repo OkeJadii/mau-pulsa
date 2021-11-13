@@ -18,3 +18,9 @@ Route::get('/', function () {
         "title" => "Home"
     ]);
 });
+
+Route::get('/dashboard', function () {
+    return view('admin.index', [
+        "title" => "Dashboard"
+    ]);
+});
