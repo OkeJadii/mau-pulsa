@@ -27,14 +27,15 @@
   <!-- Nav Item - Pages Collapse Menu -->
   <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-      <i class="fas fa-fw fa-cog"></i>
-      <span>Components</span>
+      <i class="fas fa-fw fa-table"></i>
+      <span>Tables</span>
     </a>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Custom Components:</h6>
-        <a class="collapse-item" href="#">Buttons</a>
-        <a class="collapse-item" href="#">Cards</a>
+        <h6 class="collapse-header">Tabels Data:</h6>
+        <a class="collapse-item" href="#">User</a>
+        <a class="collapse-item" href="#">Pulsa</a>
+        <a class="collapse-item" href="#">PLN</a>
       </div>
     </div>
   </li>
@@ -42,15 +43,15 @@
   <!-- Nav Item - Utilities Collapse Menu -->
   <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-      <i class="fas fa-fw fa-wrench"></i>
-      <span>Utilities</span>
+      <i class="fas fa-clipboard"></i>
+      <span>Transaction</span>
     </a>
     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Custom Utilities:</h6>
-        <a class="collapse-item" href="#">Colors</a>
-        <a class="collapse-item" href="#">Borders</a>
-        <a class="collapse-item" href="#">Other</a>
+        <h6 class="collapse-header">Transaction Data:</h6>
+        <a class="collapse-item" href="#">Test</a>
+        <a class="collapse-item" href="#">Test</a>
+        <a class="collapse-item" href="#">Test</a>
       </div>
     </div>
   </li>
@@ -72,8 +73,8 @@
   <!-- Nav Item - Tables -->
   <li class="nav-item">
     <a class="nav-link" href="#">
-      <i class="fas fa-fw fa-table"></i>
-      <span>Tables</span></a
+      <i class="fas fa-fw fa-folder"></i>
+      <span>Test</span></a
     >
   </li>
 
