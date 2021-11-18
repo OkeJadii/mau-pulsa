@@ -24,3 +24,9 @@ Route::get('/dashboard', function () {
         "title" => "Dashboard"
     ]);
 });
+
+Route::get('/pulsa', function () {
+    return view('user.pulsa', [
+        "title" => "Pembelian Pulsa"
+    ]);
+});
