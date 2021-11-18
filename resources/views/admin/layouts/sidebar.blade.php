@@ -1,8 +1,8 @@
 <ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
   <!-- Sidebar - Brand -->
-  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
-    <div class="sidebar-brand-icon rotate-n-15">
-      <img src="img/favicon2.png" alt="logo" width="50" class="rounded-circle">
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
+    <div class="sidebar-brand-icon">
+      <img src="/img/favicon2.png" alt="logo" width="50" class="rounded-circle">
     </div>
     <div class="sidebar-brand-text mx-2">MP-Admin</div>
   </a>
@@ -11,8 +11,8 @@
   <hr class="sidebar-divider my-0" />
 
   <!-- Nav Item - Dashboard -->
-  <li class="nav-item active">
-    <a class="nav-link" href="#">
+  <li class="nav-item {{ Request::is('admin') ? 'active' : ''}}">
+    <a class="nav-link" href="/admin">
       <i class="fas fa-fw fa-tachometer-alt"></i>
       <span>Dashboard</span>
     </a>
@@ -25,7 +25,7 @@
   <div class="sidebar-heading">DATA MASTER</div>
 
   <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item">
+  <li class="nav-item {{ Request::is('admin/*') ? 'active' : ''}}">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
       <i class="fas fa-fw fa-table"></i>
       <span>Tables</span>
@@ -34,7 +34,7 @@
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Tabels Data:</h6>
         <a class="collapse-item" href="#">User</a>
-        <a class="collapse-item" href="#">Pulsa</a>
+        <a class="collapse-item" href="/admin/pulsa">Pulsa</a>
         <a class="collapse-item" href="#">PLN</a>
       </div>
     </div>

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PulsaController;
+use App\Models\Pulsa;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +21,11 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/dashboard', function () {
+Route::get('/admin', function () {
     return view('admin.index', [
-        "title" => "Dashboard"
+        "title" => "Dashboard",
+        "pulsa" => Pulsa::all()
     ]);
 });
+
+Route::resource('/admin/pulsa', PulsaController::class);
