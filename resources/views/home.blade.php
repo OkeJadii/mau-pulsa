@@ -1,4 +1,4 @@
-@extends('user.layouts.main')
+@extends('layouts.main')
 
 <!-- ======= Hero Section ======= -->
 <section id="hero">
@@ -10,9 +10,15 @@
           <h1>Isi Ulang Pulsa Untungnya Makin Nyata Dengan <span>Maupulsa</span></h1>
           <br>
           <h2>Nikmati kemudahan transaksi dimana saja dan kapan saja dari genggaman anda.</h2>
+          @auth
+            <div class="text-center text-lg-start">
+              <a href="#product" class="btn-get-started scrollto">Get Started</a>
+            </div>
+          @else
           <div class="text-center text-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="/login" class="btn-get-started scrollto">Login</a>
           </div>
+          @endauth
         </div>
       </div>
       <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
@@ -113,7 +119,7 @@
       <div class="row">
         <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"
           data-aos="fade-right">
-          
+
         </div>
         <div
           class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
