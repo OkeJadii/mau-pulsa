@@ -30,8 +30,8 @@
 <body>
     @include('user.partials.navbar')
 
-      @yield('content')
 
+    @yield('content')
 
   <!-- Vendor JS Files -->
   <script src="/assets/vendor/aos/aos.js"></script>
@@ -44,6 +44,7 @@
 
   <!-- Template Main JS File -->
   <script src="/js/main.js"></script>
+
 
   </body>
 

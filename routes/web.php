@@ -44,3 +44,17 @@ Route::get('/admin', function () {
 })->middleware('admin');
 
 Route::resource('/admin/pulsa', PulsaController::class)->middleware('admin');
+
+Route::get('/pulsa', function () {
+    return view('user.index', [
+        "title" => "Pembelian Pulsa",
+
+    ]);
+});
+
+Route::get('/pulsa/telkomsel', function () {
+    return view('user.pulsa.telkomsel', [
+        "title" => "Telkomsel",
+
+    ]);
+});
