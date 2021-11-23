@@ -28,4 +28,18 @@ Route::get('/admin', function () {
     ]);
 });
 
+Route::get('/pulsa', function () {
+    return view('user.index', [
+        "title" => "Pembelian Pulsa",
+        
+    ]);
+});
+
+
+Route::get('/pulsa/telkomsel', function () {
+    return view('user.pulsa.telkomsel', [
+        "title" => "Telkomsel",
+        
+    ]);
+});
 Route::resource('/admin/pulsa', PulsaController::class);

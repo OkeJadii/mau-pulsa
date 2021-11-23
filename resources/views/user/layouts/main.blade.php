@@ -23,15 +23,15 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 
   <!-- Template Main CSS File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
     @include('user.partials.navbar')
   
-    <section>
+    
       @yield('content')
-    </section>
+    
     
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -43,7 +43,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   
   <!-- Template Main JS File -->
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
   
   </body>
   
