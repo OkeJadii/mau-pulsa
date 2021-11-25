@@ -205,6 +205,63 @@ h6 {
 .navbar li:hover > a {
     color: #fff;
 }
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.navbar .dropdown ul li {
+    min-width: 200px;
+}
+.navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: none;
+    color: rgba(136, 1, 35, 0.9);
+}
+.navbar .dropdown ul a i {
+    font-size: 12px;
+}
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+    color: #eb6324;
+}
+.navbar .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+}
+@media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+        left: -90%;
+    }
+    .navbar .dropdown .dropdown:hover > ul {
+        left: -100%;
+    }
+}
 
 /**
 * Mobile Navigation
@@ -286,6 +343,23 @@ h6 {
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
+.navbar-mobile .dropdown ul li {
+    min-width: 200px;
+}
+.navbar-mobile .dropdown ul a {
+    padding: 10px 20px;
+}
+.navbar-mobile .dropdown ul a i {
+    font-size: 12px;
+}
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
+    color: #eb6324;
+}
+.navbar-mobile .dropdown > .dropdown-active {
+    display: block;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
