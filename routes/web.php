@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProviderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PulsaController;
 use App\Models\Pulsa;
@@ -28,10 +29,13 @@ Route::get('/admin', function () {
     ]);
 });
 
+Route::resource('/admin/pulsa/price', PulsaController::class);
+Route::resource('/admin/pulsa/provider', ProviderController::class);
+
+
 Route::get('/pulsa', function () {
     return view('user.index', [
         "title" => "Pembelian Pulsa",
-        
     ]);
 });
 
@@ -39,7 +43,5 @@ Route::get('/pulsa', function () {
 Route::get('/pulsa/telkomsel', function () {
     return view('user.pulsa.telkomsel', [
         "title" => "Telkomsel",
-        
     ]);
 });
-Route::resource('/admin/pulsa', PulsaController::class);

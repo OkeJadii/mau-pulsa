@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Provider;
 use App\Models\User;
 use App\Models\Pulsa;
 use Illuminate\Database\Seeder;
@@ -40,6 +41,19 @@ class DatabaseSeeder extends Seeder
         Pulsa::create([
             'nominal' => '100.000',
             'harga' => '99.000'
+        ]);
+
+        Provider::create([
+            'name' => 'Telkomsel'
+        ]);
+        Provider::create([
+            'name' => 'XL'
+        ]);
+        Provider::create([
+            'name' => 'Tri'
+        ]);
+        Provider::create([
+            'name' => 'Indosat Oredoo'
         ]);
     }
 }

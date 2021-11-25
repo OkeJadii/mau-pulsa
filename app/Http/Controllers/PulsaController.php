@@ -15,7 +15,7 @@ class PulsaController extends Controller
      */
     public function index()
     {
-        return view('admin.pulsa.index', [
+        return view('admin.pulsa.price.index', [
             'title' => 'Dashboard Admin',
             'pulsa' => Pulsa::all()
         ]);
@@ -28,7 +28,7 @@ class PulsaController extends Controller
      */
     public function create()
     {
-        return view('admin.pulsa.create', [
+        return view('admin.pulsa.price.create', [
             'title' => 'Tambah Data Pulsa'
         ]);
     }
@@ -70,7 +70,7 @@ class PulsaController extends Controller
      */
     public function edit(Pulsa $pulsa)
     {
-        return view('admin.pulsa.edit', [
+        return view('admin.pulsa.price.edit', [
             'title' => 'Edit Data Pulsa',
             'pulsa' => $pulsa
         ]);
