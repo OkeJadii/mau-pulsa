@@ -27,14 +27,14 @@
   <!-- Nav Item - Pages Collapse Menu -->
   <li class="nav-item {{ Request::is('admin/*') ? 'active' : ''}}">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-      <i class="fas fa-fw fa-table"></i>
+      <i class="fas fa-mobile-alt"></i>
       <span>Pulsa</span>
     </a>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Tabels Data:</h6>
-        <a class="collapse-item" href="/admin/pulsa/provider">Providers</a>
-        <a class="collapse-item" href="/admin/pulsa/price">Prices</a>
+        <a class="collapse-item" href="/admin/provider">Providers</a>
+        <a class="collapse-item" href="/admin/pulsa">Prices</a>
         <a class="collapse-item" href="#">Transaction</a>
       </div>
     </div>
@@ -43,7 +43,7 @@
   <!-- Nav Item - Utilities Collapse Menu -->
   <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-      <i class="fas fa-clipboard"></i>
+      <i class="fas fa-bolt"></i>
       <span>PLN</span>
     </a>
     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">

@@ -28,14 +28,14 @@
               <th width="15%">Aksi</th>
             </tr>
           </thead>
-          @foreach ($pulsa as $p)
+          @foreach ($prices as $price)
             <tr>
               <td>{{ $loop->iteration }}</td>
-              <td>{{ $p->nominal }}</td>
-              <td>{{ $p->harga }}</td>
+              <td>{{ $price->nominal }}</td>
+              <td>{{ $price->harga }}</td>
               <td>
-                <a href="/admin/pulsa/{{ $p->id }}/edit" class="btn-primary btn"><i class="fas fa-edit"></i></a>
-                <form action="/admin/pulsa/{{ $p->id }}" method="POST" class="d-inline">
+                <a href="/admin/pulsa/{{ $price->id }}/edit" class="btn-primary btn"><i class="fas fa-edit"></i></a>
+                <form action="/admin/pulsa/{{ $price->id }}" method="POST" class="d-inline">
                   @method('delete')
                   @csrf
                   <button class="btn-danger btn border-0" onclick="return confirm('ANDA YAKIN MENGHAPUS DATA INI?')"><i class="fas fa-trash-alt"></i></button>

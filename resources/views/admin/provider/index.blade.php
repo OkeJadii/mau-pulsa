@@ -18,7 +18,7 @@
 
     <div class="card-body">
       <div class="table-responsive">
-        <a href="/admin/pulsa/create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Create new data</a>
+        <a href="/admin/provider/create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Create new data</a>
         <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
@@ -27,13 +27,13 @@
               <th width="15%">Aksi</th>
             </tr>
           </thead>
-          @foreach ($providers as $p)
+          @foreach ($providers as $provider)
             <tr>
               <td>{{ $loop->iteration }}</td>
-              <td>{{ $p->name }}</td>
+              <td>{{ $provider->name }}</td>
               <td>
-                <a href="/admin/provider/{{ $p->id }}/edit" class="btn-primary btn"><i class="fas fa-edit"></i></a>
-                <form action="/admin/provider/{{ $p->id }}" method="POST" class="d-inline">
+                <a href="/admin/provider/{{ $provider->id }}/edit" class="btn-primary btn"><i class="fas fa-edit"></i></a>
+                <form action="/admin/provider/{{ $provider->id }}" method="POST" class="d-inline">
                   @method('delete')
                   @csrf
                   <button class="btn-danger btn border-0" onclick="return confirm('ANDA YAKIN MENGHAPUS DATA INI?')"><i class="fas fa-trash-alt"></i></button>

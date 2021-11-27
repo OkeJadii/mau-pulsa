@@ -8,11 +8,19 @@
     <nav id="navbar" class="navbar">
       <ul>
         <li><a class="nav-link scrollto {{ Request::is('/') ? 'active' : ''}}" href="/">Home</a></li>
-        <li><a class="nav-link scrollto {{ Request::is('product/*') ? 'active' : ''}}" href="/">Product</a></li>
+        {{-- <li><a class="nav-link scrollto {{ Request::is('pulsa') ? 'active' : ''}}" href="/">Product</a></li> --}}
+        <li class="dropdown"><a href="#" class="{{ Request::is('pulsa') ? 'active' : ''}}"><span>Product</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="/pulsa">Pulsa</a></li>
+            <li><a href="#">PLN</a></li>
+            <li><a href="#">Voucer Game</a></li>
+            <li><a href="#">PDAM</a></li>
+          </ul>
+        </li>
         <li><a class="nav-link scrollto" href="/">About</a></li>
         <li><a class="nav-link scrollto" href="/">Contact</a></li>
         @auth
-        <li><a class="nav-link scrollto" href="#">History</a></li>
+        <li><a class="nav-link scrollto" href="#">History<i class="fas fa-history"></i></a> </li>
         <li class="dropdown"><a href="#"><span>Hii, {{ auth()->user()->name }}</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#"><span><i class="fas fa-user"></i> Profile</span></a></li>
@@ -27,7 +35,7 @@
         </li>
         @else
         <li>
-          <a href="/login" class="nav-link {{ Request::is('login') ? 'active' : ''}}"><i class="bi bi-box-arrow-right"></i> Login</a>
+          <a href="/login" class="nav-link {{ Request::is('login') ? 'active' : ''}} {{ Request::is('login') ? 'active' : ''}}">Login <i class="bi bi-box-arrow-right"></i></a>
         </li>
         @endauth
       </ul>

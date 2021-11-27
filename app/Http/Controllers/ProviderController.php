@@ -14,8 +14,8 @@ class ProviderController extends Controller
      */
     public function index()
     {
-        return view('admin.pulsa.provider.index', [
-            'title' => 'Dashboard Admin',
+        return view('admin.provider.index', [
+            'title' => 'Data Provider Pulsa',
             'providers' => Provider::all()
         ]);
     }
@@ -27,7 +27,9 @@ class ProviderController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.provider.create', [
+            'title' => 'Tambah Data Provider'
+        ]);
     }
 
     /**
@@ -38,7 +40,13 @@ class ProviderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|min:2|max:20'
+        ]);
+
+        Provider::create($validatedData);
+
+        return redirect('/admin/provider')->with('success', '<strong>Data Provider Berhasil Di Tambahkan</strong>');;
     }
 
     /**
@@ -60,7 +68,10 @@ class ProviderController extends Controller
      */
     public function edit(Provider $provider)
     {
-        //
+        return view('admin.provider.edit', [
+            'title' => 'Edit Data Provider',
+            'provider' => $provider
+        ]);
     }
 
     /**
@@ -72,7 +83,16 @@ class ProviderController extends Controller
      */
     public function update(Request $request, Provider $provider)
     {
-        //
+        $rules = [
+            'name' => 'required|min:2|max:255'
+        ];
+
+        $validatedData = $request->validate($rules);
+
+        Provider::where('id', $provider->id)
+            ->update($validatedData);
+
+        return redirect('/admin/provider')->with('success', '<strong>Data Provider Berhasil Di Ubah!</strong>');
     }
 
     /**
@@ -83,6 +103,8 @@ class ProviderController extends Controller
      */
     public function destroy(Provider $provider)
     {
-        //
+        Provider::destroy($provider->id);
+
+        return redirect('/admin/provider')->with('success', '<strong>Data Provider Telah Berhasil Terhapus!</strong>');;
     }
 }

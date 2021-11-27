@@ -80,7 +80,7 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #1acc8d;
+    background: #ff7433;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -92,7 +92,7 @@ h6 {
     line-height: 0;
 }
 .back-to-top:hover {
-    background: #2be4a2;
+    background: #da5416;
     color: #fff;
 }
 .back-to-top.active {
@@ -584,6 +584,20 @@ section {
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: rgba(136, 1, 35, 0.9);
+}
+
+.section-title-capitalize {
+    padding-bottom: 30px;
+}
+
+.section-title-capitalize p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
     font-family: "Poppins", sans-serif;
     color: rgba(136, 1, 35, 0.9);
 }

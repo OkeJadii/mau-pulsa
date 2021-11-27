@@ -45,13 +45,11 @@ Route::get('/admin', function () {
 })->middleware('admin');
 
 Route::resource('/admin/pulsa', PulsaController::class)->middleware('admin');
-
-Route::resource('/admin/pulsa/price', PulsaController::class);
-Route::resource('/admin/pulsa/provider', ProviderController::class);
+Route::resource('/admin/provider', ProviderController::class)->middleware('admin');
 
 
 Route::get('/pulsa', function () {
-    return view('user.index', [
+    return view('user.pulsa.index', [
         "title" => "Pembelian Pulsa"
     ]);
 });
