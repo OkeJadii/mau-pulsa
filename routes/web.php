@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PulsaController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\UserPulsaController;
+use App\Models\Provider;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,23 +41,18 @@ Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/admin', function () {
     return view('admin.index', [
-        "title" => "Dashboard",
-        "pulsa" => Pulsa::all()
+        "title" => "Dashboard"
     ]);
 })->middleware('admin');
 
 Route::resource('/admin/pulsa', PulsaController::class)->middleware('admin');
 Route::resource('/admin/provider', ProviderController::class)->middleware('admin');
 
-
-Route::get('/pulsa', function () {
-    return view('user.pulsa.index', [
-        "title" => "Pembelian Pulsa"
+Route::get('/provider', function () {
+    return view('user.pulsa.providers', [
+        "title" => "Pembelian Pulsa",
+        "providers" => Provider::all()
     ]);
 });
 
-Route::get('/pulsa/telkomsel', function () {
-    return view('user.pulsa.telkomsel', [
-        "title" => "Telkomsel"
-    ]);
-});
+Route::get('/pulsa', [UserPulsaController::class, 'index']);

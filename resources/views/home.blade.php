@@ -60,7 +60,7 @@
         <div class="col-lg-3 col-md-4">
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
             <i class="bi bi-phone" style="color: #ffbb2c;"></i>
-            <h3><a href="/pulsa">Pulsa</a></h3>
+            <h3><a href="/provider">Pulsa</a></h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">

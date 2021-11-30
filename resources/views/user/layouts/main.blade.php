@@ -6,7 +6,6 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>MauPulsa | {{ $title }}</title>
-
   <link rel="icon" href="/assets/img/favicon.png">
   <link href="/assets/img/favicon.png" rel="apple-touch-icon">
 

@@ -5,14 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Provider extends Model
+class PulsaTransaction extends Model
 {
     use HasFactory;
 
     protected $guarded = ["id"];
-
-    public function pulsa()
-    {
-        return $this->hasMany(Pulsa::class);
-    }
 }

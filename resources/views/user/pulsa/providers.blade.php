@@ -11,56 +11,17 @@
                 <p>Daftar Provider Pulsa</p>
             </div>
 
-            <div class="row" data-aos="fade-left">
-                <div class="col-lg-3 col-md-3">
+            <div class="row justify-content-center" data-aos="fade-left">
+                @foreach ($providers as $provider)
+                <div class="col-lg-4 col-md-3 mt-3">
+                    <a href="/pulsa?provider={{ $provider->slug }}" style="color: black">
                     <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-                        <i class="bi bi-phone" style="color: #ffbb2c;"></i>
-                        <h3><a href="/pulsa/telkomsel">Telkomsel</a></h3>
+                        <i class="bi bi-phone" style="color: #e80368;"></i>
+                        <h3>{{ $provider->name }}</h3>
                     </div>
+                    </a>
                 </div>
-                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-                        <i class="bi bi-controller" style="color: #5578ff;"></i>
-
-                        <h3><a href="">Pulsa As</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-                        <i class="bi bi-lightning" style="color: #e80368;"></i>
-                        <h3><a href="">Pulsa IM3 Ooredoo</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-                        <i class="fas fa-signal" style="color: #e361ff;"></i>
-                        <h3><a href="">Pulsa Mentari Ooredoo</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 mt-4">
-                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
-                        <i class="fas fa-phone-volume" style="color: #47aeff;"></i>
-                        <h3><a href="">Pulsa XL</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 mt-4">
-                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-                        <i class="fas fa-tint" style="color: #ffa76e;"></i>
-                        <h3><a href="">Pulsa Axis</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 mt-4">
-                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
-                        <i class="fas fa-wallet" style="color: #11dbcf;"></i>
-                        <h3><a href="">Pulsa Tri</a></h3>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 mt-4">
-                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-                        <i class="far fa-hospital" style="color: #4233ff;"></i>
-                        <h3><a href="">Pulsa Smartfren</a></h3>
-                    </div>
-                </div>
+                @endforeach
             </div>
 
         </div>

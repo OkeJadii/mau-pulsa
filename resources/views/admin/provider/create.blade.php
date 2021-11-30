@@ -20,6 +20,16 @@
             @enderror
           </div>
 
+          <div class="form-group">
+            <label for="slug">Slug : </label>
+            <input type="text" name="slug" id="slug" required autocomplete="off" class="form-control @error('slug') is-invalid @enderror" placeholder="Slug..">
+            @error('slug')
+              <div class="invalid-feedback">
+                {{ $message }}
+              </div>
+            @enderror
+          </div>
+
           <hr>
           <button class="btn btn-primary" type="submit">Tambah Data!</button>
         </form>

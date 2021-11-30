@@ -127,39 +127,5 @@
       </div>
     </div>
 
-    <div class="col-md-4 mb-4" id="top3">
-      <div class="card shadow mb-4">
-        <div class="card-header py-3 text-center bg-danger">
-          <h6 class="m-0 font-weight-bold border-0 text-white text-center">DATA PULSA</h6>
-        </div>
-        <div class="card-body">
-          <div class="row">
-            @foreach ($pulsa as $p)
-            <div class="col-lg-12 ">
-              <h5 class="h5 mb-0 text-gray-800 text-center"><b>{{ $p->nominal }}</b></h5>
-              <h6 class="h6 mb-0 text-gray-800 text-center">{{ $p->harga }}</h6>
-            </div>
-
-            <div class="col-lg-12">
-              <!-- Divider -->
-              <hr class="sidebar-divider ">
-            </div>
-            @endforeach
-          </div>
-
-          <div class="row">
-            <div class="col-lg-12">
-              <center>
-                <a href="/admin/pulsa" class="btn btn-danger btn-md mt-4">
-                  <i class="fas fa-eye"></i>
-                  Lihat semua Data
-                </a>
-              </center>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 @endsection

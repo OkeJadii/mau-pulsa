@@ -18,11 +18,15 @@
 
     <div class="card-body">
       <div class="table-responsive">
-        <a href="/admin/pulsa/create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Create new data</a>
+        <div class="d-flex justify-content-between">
+          <a href="/admin/pulsa/create" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Create new data</a>
+          {{ $prices->links() }}
+        </div>
         <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
               <th>No</th>
+              <th>Provider</th>
               <th>Nominal</th>
               <th>Harga</th>
               <th width="15%">Aksi</th>
@@ -31,6 +35,7 @@
           @foreach ($prices as $price)
             <tr>
               <td>{{ $loop->iteration }}</td>
+              <td>{{ $price->provider->name }}</td>
               <td>{{ $price->nominal }}</td>
               <td>{{ $price->harga }}</td>
               <td>
@@ -43,6 +48,7 @@
             </tr>
           @endforeach
         </table>
+
       </div>
     </div>
   </div>

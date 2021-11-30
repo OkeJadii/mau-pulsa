@@ -8,6 +8,7 @@
     <meta name="author" content="" />
 
     <title>Mau Pulsa | {{ $title }}</title>
+    <link rel="icon" href="/assets/img/favicon.png">
     <link href="/assets/img/favicon.png" rel="apple-touch-icon">
     <!-- Custom fonts for this template-->
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />

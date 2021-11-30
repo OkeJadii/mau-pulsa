@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePulsasTable extends Migration
+class CreatePulsaTransactionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreatePulsasTable extends Migration
      */
     public function up()
     {
-        Schema::create('pulsas', function (Blueprint $table) {
+        Schema::create('pulsa_transactions', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->nullable();
             $table->foreignId('provider_id');
-            $table->string('nominal');
+            $table->foreignId('pulsa_id');
             $table->string('harga');
+            $table->string('status');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreatePulsasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pulsas');
+        Schema::dropIfExists('pulsa_transactions');
     }
 }

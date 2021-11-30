@@ -41,7 +41,8 @@ class ProviderController extends Controller
     public function store(Request $request)
     {
         $validatedData = $request->validate([
-            'name' => 'required|min:2|max:20'
+            'name' => 'required|min:2|max:20',
+            'slug' => 'required|min:2|max:20'
         ]);
 
         Provider::create($validatedData);
@@ -84,7 +85,8 @@ class ProviderController extends Controller
     public function update(Request $request, Provider $provider)
     {
         $rules = [
-            'name' => 'required|min:2|max:255'
+            'name' => 'required|min:2|max:255',
+            'slug' => 'required|min:2|max:255'
         ];
 
         $validatedData = $request->validate($rules);
