@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Provider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProviderController extends Controller
 {
@@ -42,8 +43,13 @@ class ProviderController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|min:2|max:20',
-            'slug' => 'required|min:2|max:20'
+            'slug' => 'required|min:2|max:20',
+            'icon' => 'required|image|file|max:1024'
         ]);
+
+        if ($request->file('icon')) {
+            $validatedData['icon'] = $request->file('icon')->store('provider-icon');
+        }
 
         Provider::create($validatedData);
 
@@ -86,10 +92,18 @@ class ProviderController extends Controller
     {
         $rules = [
             'name' => 'required|min:2|max:255',
-            'slug' => 'required|min:2|max:255'
+            'slug' => 'required|min:2|max:255',
+            'icon' => 'required|image|file|max:1024'
         ];
 
         $validatedData = $request->validate($rules);
+
+        if ($request->file('icon')) {
+            if ($request->oldImage) {
+                Storage::delete($request->oldImage);
+            }
+            $validatedData['icon'] = $request->file('icon')->store('provider-icon');
+        }
 
         Provider::where('id', $provider->id)
             ->update($validatedData);
@@ -105,6 +119,10 @@ class ProviderController extends Controller
      */
     public function destroy(Provider $provider)
     {
+        if ($provider->icon) {
+            Storage::delete($provider->icon);
+        }
+
         Provider::destroy($provider->id);
 
         return redirect('/admin/provider')->with('success', '<strong>Data Provider Telah Berhasil Terhapus!</strong>');;

@@ -30,6 +30,20 @@
               </div>
             @enderror
           </div>
+
+          <div class="form-group">
+            <label for="provider">PROVIDER : </label>
+            <select class="form-select" name="provider_id">
+              @foreach ($providers as $provider)
+                @if (old('provider_id', $pulsa->provider_id) == $provider->id)
+                  <option value="{{ $provider->id }}" selected>{{ $provider->name }}</option>
+                @else
+                  <option value="{{ $provider->id }}">{{ $provider->name }}</option>
+                @endif
+              @endforeach
+            </select>
+          </div>
+
           <hr>
           <button class="btn btn-primary" type="submit">Ubah Data!</button>
         </form>

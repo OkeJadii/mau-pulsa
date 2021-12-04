@@ -96,6 +96,41 @@
 
     <div class="col-md-4 mb-4" id="top3">
       <div class="card shadow mb-4">
+        <div class="card-header py-3 text-center bg-danger">
+          <h6 class="m-0 font-weight-bold border-0 text-white text-center">DATA PROVIDER PULSA</h6>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            @foreach ($providers as $provider)
+              <div class="col-lg-2 mb-2">
+                <img src="{{ asset('storage/' . $provider->icon) }}" alt="{{ $provider->name }}" width="100%" style="border-radius: 5px;">
+              </div>
+              <div class="col-lg-10 ">
+                <h5 class="h5 mb-0 text-gray-800"><b>{{ $provider->name }}</b></h5>
+              </div>
+
+                <div class="col-lg-12">
+                  <hr class="sidebar-divider my-3">
+                </div>
+            @endforeach
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <center>
+                <a href="/admin/provider" class="btn btn-danger btn-md mt-4">
+                  <i class="fas fa-eye"></i>
+                  Lihat semua Provider
+                </a>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4" id="top3">
+      <div class="card shadow mb-4">
         <div class="card-header py-3 text-center bg-success">
           <h6 class="m-0 font-weight-bold border-0 text-white text-center">DATA TRANSAKSI</h6>
         </div>

@@ -1,13 +1,13 @@
 <?php
 
-use App\Http\Controllers\ProviderController;
 use App\Models\Pulsa;
+use App\Models\Provider;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PulsaController;
+use App\Http\Controllers\ProviderController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserPulsaController;
-use App\Models\Provider;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,8 +40,12 @@ Route::get('/register', [RegisterController::class, 'index'])->middleware('guest
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/admin', function () {
+    $providers = Provider::all();
+    $providers = $providers->take(4);
+
     return view('admin.index', [
-        "title" => "Dashboard"
+        "title" => "Dashboard",
+        "providers" => $providers
     ]);
 })->middleware('admin');
 

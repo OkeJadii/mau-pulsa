@@ -398,19 +398,19 @@
             <div class="address">
               <i class="bi bi-geo-alt"></i>
               <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Jl.Wayan Gentuh 16X Dalung, Kuta Utara, Badung, Bali</p>
             </div>
 
             <div class="email">
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
-              <p>info@example.com</p>
+              <p>maupulsa2021@gmail.com</p>
             </div>
 
             <div class="phone">
               <i class="bi bi-phone"></i>
               <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
+              <p>+62 821 4624 4571</p>
             </div>
 
           </div>
@@ -450,35 +450,34 @@
 <footer id="footer">
   <div class="footer-top">
     <div class="container">
-      <div class="row justify-content-center">
+        <div class="row justify-content-center">
 
-        <div class="col-lg-12 col-md-6">
-          <div class="footer-info">
-            <h3>MauPulsa</h3>
-            <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em>
-            </p>
-            <p>
-              A108 Adam Street <br>
-              NY 535022, USA<br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <div class="col-lg-12 col-md-6">
+                <div class="footer-info">
+                    <h3>MauPulsa</h3>
+                    <p class="pb-3"><em>"Semua yang kamu mau ada di MauPulsa"</em>
+                    </p>
+                    <p>
+                        Jl.Wayan Gentuh 16X <br>
+                        Dalung, Kuta Utara, Badung, Bali<br><br>
+                        <strong>Phone :</strong> +62 821 4624 4571<br>
+                        <strong>Email :</strong> maupulsa2021@gmail.com<br>
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
   <div class="container">
     <div class="copyright">
-      &copy; Copyright <strong><span>MauPulsa</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>MauPulsa</span></strong> <i class="bi bi-suit-heart-fill"></i>.
     </div>
   </div>
 </footer><!-- End Footer -->

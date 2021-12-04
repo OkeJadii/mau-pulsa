@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Provider;
 use App\Models\User;
 use App\Models\Pulsa;
 use Illuminate\Http\Request;
@@ -29,7 +30,8 @@ class PulsaController extends Controller
     public function create()
     {
         return view('admin.pulsa.create', [
-            'title' => 'Tambah Data Pulsa'
+            'title' => 'Tambah Data Pulsa',
+            'providers' => Provider::all()
         ]);
     }
 
@@ -43,7 +45,8 @@ class PulsaController extends Controller
     {
         $validatedData = $request->validate([
             'harga' => 'required|min:4|max:255',
-            'nominal' => 'required|min:4|max:255'
+            'nominal' => 'required|min:4|max:255',
+            'provider_id' => 'required'
         ]);
 
         Pulsa::create($validatedData);
@@ -72,7 +75,8 @@ class PulsaController extends Controller
     {
         return view('admin.pulsa.edit', [
             'title' => 'Edit Data Pulsa',
-            'pulsa' => $pulsa
+            'pulsa' => $pulsa,
+            'providers' => Provider::all()
         ]);
     }
 

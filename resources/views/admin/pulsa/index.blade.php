@@ -26,6 +26,7 @@
           <thead>
             <tr>
               <th>No</th>
+              <th width="12%">Icon</th>
               <th>Provider</th>
               <th>Nominal</th>
               <th>Harga</th>
@@ -35,6 +36,13 @@
           @foreach ($prices as $price)
             <tr>
               <td>{{ $loop->iteration }}</td>
+              <td>
+                @if ($price->provider->icon)
+                  <img src="{{ asset('storage/' . $price->provider->icon) }}" alt="{{ $price->provider->name }}" class="img-fluid" width="50px">
+                @else
+                <i class="bi bi-phone" style="color: #850a1b; font-size:25px;"></i>
+                @endif
+              </td>
               <td>{{ $price->provider->name }}</td>
               <td>{{ $price->nominal }}</td>
               <td>{{ $price->harga }}</td>

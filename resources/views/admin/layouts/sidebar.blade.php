@@ -7,9 +7,6 @@
     <div class="sidebar-brand-text mx-2">MP-Admin</div>
   </a>
 
-  <!-- Divider -->
-  <hr class="sidebar-divider my-0" />
-
   <!-- Nav Item - Dashboard -->
   <li class="nav-item {{ Request::is('admin') ? 'active' : ''}}">
     <a class="nav-link" href="/admin">
@@ -19,7 +16,7 @@
   </li>
 
   <!-- Divider -->
-  <hr class="sidebar-divider" />
+  <hr class="sidebar-divider text-light" />
 
   <!-- Heading -->
   <div class="sidebar-heading">DATA MASTER</div>
@@ -57,7 +54,7 @@
   </li>
 
   <!-- Divider -->
-  <hr class="sidebar-divider" />
+  <hr class="sidebar-divider text-light" />
 
   <!-- Heading -->
   <div class="sidebar-heading">Addons</div>
@@ -79,7 +76,7 @@
   </li>
 
   <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block" />
+  <hr class="sidebar-divider d-none d-md-block text-light" />
 
   <!-- Sidebar Toggler (Sidebar) -->
   <div class="text-center d-none d-md-inline">

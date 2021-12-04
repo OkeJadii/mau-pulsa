@@ -41,12 +41,12 @@
 
               <br>
 
-              <div class="mb-3">
+              {{-- <div class="mb-3">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="cb1" name="remember">
                   <label class="custom-control-label" for="cb1">Remember me</label>
                 </div>
-              </div>
+              </div> --}}
 
               <div class="mb-3">
                 <button type="submit" class="button-login">
