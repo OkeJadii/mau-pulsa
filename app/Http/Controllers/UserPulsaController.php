@@ -22,4 +22,29 @@ class UserPulsaController extends Controller
             "provider" => $title
         ]);
     }
+
+    public function detail(Request $request)
+    {
+        $produk = $request['nominal'];
+        $produk = explode('-', $produk);
+        $provider = $request['provider'];
+        $noHp = $request['noHp'];
+
+        $test = [
+            'noHp' => $noHp,
+            'provider' => $provider,
+            'nominal' => $produk[0],
+            'harga' => $produk[1]
+        ];
+
+        dd($test);
+
+        // return view('user.pulsa', [
+        //     "title" => "Detail Pembelian",
+        //     "noHp" => $noHp,
+        //     "provider" => $provider,
+        //     "nominal" => $produk[0],
+        //     "harga" => $produk[1]
+        // ]);
+    }
 }

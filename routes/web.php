@@ -60,3 +60,4 @@ Route::get('/provider', function () {
 });
 
 Route::get('/pulsa', [UserPulsaController::class, 'index']);
+Route::post('/pulsa-detail', [UserPulsaController::class, 'detail']);

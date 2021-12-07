@@ -16,7 +16,7 @@
   </li>
 
   <!-- Divider -->
-  <hr class="sidebar-divider text-light" />
+  <hr class="sidebar-divider text-light" style="height: 0px" />
 
   <!-- Heading -->
   <div class="sidebar-heading">DATA MASTER</div>
@@ -54,7 +54,7 @@
   </li>
 
   <!-- Divider -->
-  <hr class="sidebar-divider text-light" />
+  <hr class="sidebar-divider text-light" style="height: 0px"/>
 
   <!-- Heading -->
   <div class="sidebar-heading">Addons</div>
@@ -76,7 +76,7 @@
   </li>
 
   <!-- Divider -->
-  <hr class="sidebar-divider d-none d-md-block text-light" />
+  <hr class="sidebar-divider d-none d-md-block text-light" style="height: 0px"/>
 
   <!-- Sidebar Toggler (Sidebar) -->
   <div class="text-center d-none d-md-inline">
