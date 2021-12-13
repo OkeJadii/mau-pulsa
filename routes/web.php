@@ -5,6 +5,7 @@ use App\Models\Provider;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PulsaController;
+use App\Http\Controllers\EwalletController;
 use App\Http\Controllers\ProviderController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserPulsaController;
@@ -23,12 +24,6 @@ use App\Http\Controllers\UserPulsaController;
 Route::get('/', function () {
     return view('home', [
         "title" => "Home"
-    ]);
-});
-
-Route::get('/pulsa', function () {
-    return view('user.pulsa', [
-        "title" => "Pulsa"
     ]);
 });
 
@@ -51,6 +46,7 @@ Route::get('/admin', function () {
 
 Route::resource('/admin/pulsa', PulsaController::class)->middleware('admin');
 Route::resource('/admin/provider', ProviderController::class)->middleware('admin');
+Route::resource('/admin/ewallet', EwalletController::class)->middleware('admin');
 
 Route::get('/provider', function () {
     return view('user.pulsa.providers', [
@@ -61,3 +57,14 @@ Route::get('/provider', function () {
 
 Route::get('/pulsa', [UserPulsaController::class, 'index']);
 Route::post('/pulsa-detail', [UserPulsaController::class, 'detail']);
+
+Route::get('/pln', function () {
+    return view('user.pln.index', [
+        "title" => "PLN"
+    ]);
+});
+Route::get('/wallet', function () {
+    return view('user.e-wallet.index', [
+        "title" => "PLN"
+    ]);
+});

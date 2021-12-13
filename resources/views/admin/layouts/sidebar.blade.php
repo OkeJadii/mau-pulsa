@@ -22,7 +22,7 @@
   <div class="sidebar-heading">DATA MASTER</div>
 
   <!-- Nav Item - Pages Collapse Menu -->
-  <li class="nav-item {{ Request::is('admin/*') ? 'active' : ''}}">
+  <li class="nav-item {{ Request::is('admin/provider') ? 'active' : ''}} {{ Request::is('admin/pulsa') ? 'active' : ''}}">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
       <i class="fas fa-mobile-alt"></i>
       <span>Pulsa</span>
@@ -32,7 +32,7 @@
         <h6 class="collapse-header">Tabels Data:</h6>
         <a class="collapse-item" href="/admin/provider">Providers</a>
         <a class="collapse-item" href="/admin/pulsa">Prices</a>
-        <a class="collapse-item" href="#">Transaction</a>
+        <a class="collapse-item" href="#">Transactions</a>
       </div>
     </div>
   </li>
@@ -49,6 +49,22 @@
         <a class="collapse-item" href="#">Test</a>
         <a class="collapse-item" href="#">Test</a>
         <a class="collapse-item" href="#">Test</a>
+      </div>
+    </div>
+  </li>
+
+  <!-- Nav Item - Utilities Collapse Menu -->
+  <li class="nav-item {{ Request::is('admin/ewallet') ? 'active' : ''}}">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseWall" aria-expanded="true" aria-controls="collapseWall">
+      <i class="fas fa-wallet"></i>
+      <span>E-Wallet</span>
+    </a>
+    <div id="collapseWall" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+      <div class="bg-white py-2 collapse-inner rounded">
+        <h6 class="collapse-header">Tabels Data:</h6>
+        <a class="collapse-item" href="/admin/ewallet">E-Wallet</a>
+        <a class="collapse-item" href="#">Prices</a>
+        <a class="collapse-item" href="#">Transaction</a>
       </div>
     </div>
   </li>

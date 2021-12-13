@@ -8,7 +8,7 @@
     <section id="faq" class="faq section-bg">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
-          <p>ISI PULSA {{ $provider }}</p>
+          <p class="d-inline">ISI PULSA {{ $provider }}</p>  <img src="{{ asset('storage/' . $icon) }}" alt="{{ $title}}" width="50px" class="ms-2 pb-3">
         </div>
 
         <form method="POST" action="/pulsa-detail">

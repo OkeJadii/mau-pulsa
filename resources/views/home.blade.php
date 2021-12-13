@@ -50,7 +50,6 @@
   <!-- ======= Product Section ======= -->
   <section id="product" class="features mt-4">
     <div class="container">
-
       <div class="section-title" data-aos="fade-up">
         <h2>Product</h2>
         <p>Daftar Produk</p>
@@ -58,53 +57,75 @@
 
       <div class="row" data-aos="fade-left">
         <div class="col-lg-3 col-md-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+          <a href="/provider" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="50" style="transition: 1s">
             <i class="bi bi-phone" style="color: #ffbb2c;"></i>
-            <h3><a href="/provider">Pulsa</a></h3>
+            <h3>Pulsa</h3>
           </div>
+          </a>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-            <i class="bi bi-controller" style="color: #5578ff;"></i>
 
-            <h3><a href="">Voucher Game</a></h3>
-          </div>
-        </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+          <a href="/pln" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="150" style="transition: 1s">
             <i class="bi bi-lightning" style="color: #e80368;"></i>
-            <h3><a href="">Listrik PLN</a></h3>
+            <h3>Listrik PLN</h3>
           </div>
+          </a>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-            <i class="fas fa-signal" style="color: #e361ff;"></i>
-            <h3><a href="">Paket Data</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
-            <i class="fas fa-phone-volume" style="color: #47aeff;"></i>
-            <h3><a href="">Telkom</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-            <i class="fas fa-tint" style="color: #ffa76e;"></i>
-            <h3><a href="">PDAM</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
+
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <a href="/wallet" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="350" style="transition: 1s">
             <i class="fas fa-wallet" style="color: #11dbcf;"></i>
-            <h3><a href="">Uang Elektronik</a></h3>
+            <h3>Dompet Elektronik</h3>
           </div>
+          </a>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-            <i class="far fa-hospital" style="color: #4233ff;"></i>
-            <h3><a href="">BPJS Kesehatan</a></h3>
+
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <a href="#" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="200" style="transition: 1s">
+            <i class="fas fa-signal" style="color: #e361ff;"></i>
+            <h3>Paket Data</h3>
           </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <a href="#" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="100" style="transition: 1s">
+            <i class="bi bi-controller" style="color: #5578ff;"></i>
+            <h3>Voucher Game</h3>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <a href="#" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="250" style="transition: 1s">
+            <i class="fas fa-phone-volume" style="color: #47aeff;"></i>
+            <h3>Telkom</h3>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <a href="#" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="300" style="transition: 1s">
+            <i class="fas fa-tint" style="color: #ffa76e;"></i>
+            <h3>PDAM</h3>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <a href="#" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="400" style="transition: 1s">
+            <i class="far fa-hospital" style="color: #4233ff;"></i>
+            <h3>BPJS Kesehatan</h3>
+          </div>
+          </a>
         </div>
       </div>
 
@@ -113,7 +134,7 @@
   <!-- End Features Section -->
 
   <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+  <section id="about" class="about section-bg">
     <div class="container-fluid">
 
       <div class="row">
@@ -418,23 +439,34 @@
         </div>
 
         <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terimakasih Yaaa!</strong> Pesan kamu sudah kami terima.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
 
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form name="contact-form" role="form" class="contact-form">
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" class="form-control" placeholder="Your Name" id="name" aria-describedby="name" name="name" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" aria-describedby="email" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" aria-describedby="subject" required autocomplete="off">
             </div>
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center mt-2">
+              <button type="submit" class="btn-kirim">Send Message</button>
+
+              <button class="text-center btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </div>
           </form>
 
         </div>
@@ -464,7 +496,7 @@
                         <strong>Email :</strong> maupulsa2021@gmail.com<br>
                     </p>
                     <div class="social-links mt-3">
-                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.instagram.com/mau.pulsa/" class="instagram" target="blank"><i class="bx bxl-instagram"></i></a>
                         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -485,3 +517,31 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
     class="bi bi-arrow-up-short"></i></a>
 <div id="preloader"></div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzCZY5lFzt91VC38eWyF4Vl-i4LCKA8GOtczpKQt1vf4bCpMc2jFFgqITYdQ-HDeseV/exec';
+  const form = document.forms['contact-form'];
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const myAlert = document.querySelector('.my-alert');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    //ketika tombol submit diklik
+    //tampilkan tombol loading, hilangkan tombol kirim
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then((response) => {
+        //tampilkan tombol kirim, hilangkan tombol loading
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        //tampilkan alert
+        myAlert.classList.toggle('d-none');
+        //reset formnya
+        form.reset();
+        console.log('Success!', response);
+      })
+      .catch((error) => console.error('Error!', error.message));
+  });
+</script>

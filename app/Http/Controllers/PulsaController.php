@@ -18,7 +18,7 @@ class PulsaController extends Controller
     {
         return view('admin.pulsa.index', [
             'title' => 'Data Harga Pulsa',
-            'prices' => Pulsa::paginate(6)
+            'prices' => Pulsa::paginate(9)
         ]);
     }
 
