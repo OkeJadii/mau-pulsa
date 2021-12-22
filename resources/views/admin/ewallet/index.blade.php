@@ -24,7 +24,7 @@
             <tr>
               <th>No</th>
               <th width="15%">Icon</th>
-              <th>Nama Provider</th>
+              <th>Nama E-Wallet</th>
               <th width="15%">Aksi</th>
             </tr>
           </thead>
@@ -35,7 +35,7 @@
                 @if ($ewallet->icon)
                   <img src="{{ asset('storage/' . $ewallet->icon) }}" alt="{{ $ewallet->name }}" class="img-fluid" width="50px">
                 @else
-                <i class="bi bi-phone" style="color: #850a1b; font-size:25px;"></i>
+                 <i class="fas fa-wallet" style="color: #11dbcf; font-size:25px;"></i>
                 @endif
               </td>
               <td>{{ $ewallet->name }}</td>

@@ -91,7 +91,8 @@ class PulsaController extends Controller
     {
         $rules = [
             'nominal' => 'required|min:4|max:255',
-            'harga' => 'required|min:4|max:255'
+            'harga' => 'required|min:4|max:255',
+            'provider_id' => 'required'
         ];
 
         $validatedData = $request->validate($rules);

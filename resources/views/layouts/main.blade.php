@@ -40,7 +40,7 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           @auth
-          <li><a class="nav-link scrollto" href="#">History <i class="fas fa-history"></i></a></li>
+          <li><a class="nav-link scrollto" href="/history">History <i class="fas fa-history"></i></a></li>
           <li class="dropdown"><a href="#"><span>Hii, {{ auth()->user()->name }}</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#"><span><i class="fas fa-user"></i> Profile</span></a></li>

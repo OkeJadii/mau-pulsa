@@ -1251,6 +1251,14 @@ input[type="radio"]:checked + label {
         cursor: pointer;
     }
 }
+.history {
+    width: 32%;
+}
+@media (max-width: 575px) {
+    .history {
+        width: 100%;
+    }
+}
 
 .btn-beli {
     font-family: "Montserrat", sans-serif;

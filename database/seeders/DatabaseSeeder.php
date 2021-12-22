@@ -29,5 +29,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ProviderSeeder::class);
         $this->call(PulsaSeeder::class);
         $this->call(EwalletSeeder::class);
+        $this->call(EwalletPriceSeeder::class);
     }
 }

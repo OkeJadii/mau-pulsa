@@ -75,7 +75,7 @@
         </div>
 
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <a href="/wallet" style="color: black">
+          <a href="/ewallet" style="color: black">
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="350" style="transition: 1s">
             <i class="fas fa-wallet" style="color: #11dbcf;"></i>
             <h3>Dompet Elektronik</h3>
@@ -149,22 +149,22 @@
           <p>Nikmati kemudahan transaksi dimana saja dan kapan saja dari genggaman anda.</p>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon"><i class="far fa-thumbs-up"></i></div>
-            <h4 class="title"><a href="">Praktis</a></h4>
+            <div class="icon"><i class="far fa-handshake"></i></div>
+            <h4 class="title"><a href="#">Praktis</a></h4>
             <p class="description"> Kapanpun dan dimanapun, nikmati beragam transaksi dapat dilakukan melalui website
               atau aplikasi. </p>
           </div>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon"><i class="fas fa-wifi"></i></div>
-            <h4 class="title"><a href="">Online 24 Jam</a></h4>
-            <p class="description"> Jam berapa pun kamu butuh pulsa, kapan pun dan di mana pun kamu memerlukannya,
-              sistem kami Online 24 jam </p>
+            <div class="icon"><i class="far fa-thumbs-up"></i></div>
+            <h4 class="title"><a href="#">Mudah</a></h4>
+            <p class="description"> Proses transaksi yang mudah dan langsung bisa diakuakn dan tanpa harus ribet mendaftar, sehingga
+              kamu tidak perlu ribet untuk melakukan transaksi </p>
           </div>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="fas fa-user-shield"></i></div>
-            <h4 class="title"><a href="">Aman</a></h4>
+            <h4 class="title"><a href="#">Aman</a></h4>
             <p class="description"> Pulsa Online memastikan semua informasi yang ada terjaga aman dalam setiap
               transaksi. </p>
           </div>

@@ -13,14 +13,14 @@
           <ul>
             <li><a href="/provider">Pulsa</a></li>
             <li><a href="/pln">PLN</a></li>
-            <li><a href="#">E-Wallet</a></li>
+            <li><a href="/ewallet">E-Wallet</a></li>
             <li><a href="#">Paket Data</a></li>
           </ul>
         </li>
         <li><a class="nav-link scrollto" href="/">About</a></li>
         <li><a class="nav-link scrollto" href="/">Contact</a></li>
         @auth
-        <li><a class="nav-link scrollto" href="#">History<i class="fas fa-history"></i></a> </li>
+        <li><a class="nav-link scrollto" href="/history">History<i class="fas fa-history"></i></a> </li>
         <li class="dropdown"><a href="#"><span>Hii, {{ auth()->user()->name }}</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#"><span><i class="fas fa-user"></i> Profile</span></a></li>

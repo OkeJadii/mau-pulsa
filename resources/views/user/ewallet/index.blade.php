@@ -12,16 +12,16 @@
         </div>
 
         <div class="row justify-content-center" data-aos="fade-left">
-          @foreach ($wallets as $wallet)
+          @foreach ($ewallets as $ewallet)
           <div class="col-lg-4 col-md-3 mt-3">
-            <a href="/pulsa?provider={{ $wallet->slug }}" style="color: black">
-              <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-                @if ($wallet->icon)
-                <img src="{{ asset('storage/' . $wallet->icon) }}" alt="{{ $wallet->name }}" class="img-fluid pe-2" width="50px">
+            <a href="/ewalletprice?ewallet={{ $ewallet->slug }}" style="color: black">
+              <div class="icon-box border" data-aos="zoom-in" data-aos-delay="50">
+                @if ($ewallet->icon)
+                <img src="{{ asset('storage/' . $ewallet->icon) }}" alt="{{ $ewallet->name }}" class="img-fluid pe-2" width="70px">
                 @else
-                <i class="bi bi-phone" style="color: #e80368;"></i>
+                <i class="fas fa-wallet" style="color: #11dbcf;"></i>
                 @endif
-                <h3>{{ $wallet->name }}</h3>
+                <h3 class="ms-5">{{ $ewallet->name }}</h3>
               </div>
             </a>
           </div>

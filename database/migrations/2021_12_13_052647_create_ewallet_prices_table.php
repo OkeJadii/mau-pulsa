@@ -15,6 +15,9 @@ class CreateEwalletPricesTable extends Migration
     {
         Schema::create('ewallet_prices', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('ewallet_id');
+            $table->string('harga');
+            $table->string('nominal');
             $table->timestamps();
         });
     }
