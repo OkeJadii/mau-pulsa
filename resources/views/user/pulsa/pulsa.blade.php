@@ -62,6 +62,7 @@
 
                 </div>
                 <button type="submit" class="btn-beli mt-5 border-0" style="width: 100%">BELI SEKARANG! <i class="fas fa-shopping-bag"></i></button>
+                <a href="/detail">test</a>
               </li>
             </ul>
           </div>

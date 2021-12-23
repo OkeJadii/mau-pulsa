@@ -941,6 +941,13 @@ section {
     left: 20px;
     color: #ff6a24;
 }
+.faq .faq-list .icon-check {
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #ff6a24;
+}
 .faq .faq-list .icon-show,
 .faq .faq-list .icon-close {
     font-size: 24px;

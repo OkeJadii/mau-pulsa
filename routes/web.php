@@ -26,9 +26,9 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/pulsa', function () {
-    return view('user.pulsa', [
-        "title" => "Pulsa"
+Route::get('/detail', function () {
+    return view('user.pulsa.detail', [
+        "title" => "Detail"
     ]);
 });
 
