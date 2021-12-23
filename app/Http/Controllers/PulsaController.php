@@ -18,7 +18,7 @@ class PulsaController extends Controller
     {
         return view('admin.pulsa.index', [
             'title' => 'Data Harga Pulsa',
-            'prices' => Pulsa::paginate(6)
+            'prices' => Pulsa::paginate(9)
         ]);
     }
 
@@ -91,7 +91,8 @@ class PulsaController extends Controller
     {
         $rules = [
             'nominal' => 'required|min:4|max:255',
-            'harga' => 'required|min:4|max:255'
+            'harga' => 'required|min:4|max:255',
+            'provider_id' => 'required'
         ];
 
         $validatedData = $request->validate($rules);

@@ -2,12 +2,17 @@
 
 use App\Models\Pulsa;
 use App\Models\Provider;
+use App\Models\Ewallet;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PulsaController;
+use App\Http\Controllers\EwalletController;
 use App\Http\Controllers\ProviderController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserPulsaController;
+use App\Http\Controllers\UserEwalletController;
+use App\Http\Controllers\EwalletPriceController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,12 +31,15 @@ Route::get('/', function () {
     ]);
 });
 
+<<<<<<< HEAD
 Route::get('/detail', function () {
     return view('user.pulsa.detail', [
         "title" => "Detail"
     ]);
 });
 
+=======
+>>>>>>> 98464edcaa6f477f914df279a87e180e1bcf232b
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
@@ -42,7 +50,6 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/admin', function () {
     $providers = Provider::all();
     $providers = $providers->take(4);
-
     return view('admin.index', [
         "title" => "Dashboard",
         "providers" => $providers
@@ -51,6 +58,8 @@ Route::get('/admin', function () {
 
 Route::resource('/admin/pulsa', PulsaController::class)->middleware('admin');
 Route::resource('/admin/provider', ProviderController::class)->middleware('admin');
+Route::resource('/admin/ewallet', EwalletController::class)->middleware('admin');
+Route::resource('/admin/ewalletprice', EwalletPriceController::class)->middleware('admin');
 
 Route::get('/provider', function () {
     return view('user.pulsa.providers', [
@@ -61,3 +70,24 @@ Route::get('/provider', function () {
 
 Route::get('/pulsa', [UserPulsaController::class, 'index']);
 Route::post('/pulsa-detail', [UserPulsaController::class, 'detail']);
+
+Route::get('/pln', function () {
+    return view('user.pln.index', [
+        "title" => "PLN"
+    ]);
+});
+
+Route::get('/ewallet', function () {
+    return view('user.ewallet.index', [
+        "title" => "Top Up Ewallet",
+        "ewallets" => Ewallet::all()
+    ]);
+});
+
+Route::get('/history', function () {
+    return view('user.history.index', [
+        "title" => "Riwayat Transaksi"
+    ]);
+});
+
+Route::get('/ewalletprice', [UserEwalletController::class, 'index']);

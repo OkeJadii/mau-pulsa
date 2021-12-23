@@ -19,7 +19,7 @@
   <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
 
   <!-- Template Main CSS File -->
   <link href="/css/style.css" rel="stylesheet">
@@ -40,7 +40,7 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           @auth
-          <li><a class="nav-link scrollto" href="#">History <i class="fas fa-history"></i></a></li>
+          <li><a class="nav-link scrollto" href="/history">History <i class="fas fa-history"></i></a></li>
           <li class="dropdown"><a href="#"><span>Hii, {{ auth()->user()->name }}</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#"><span><i class="fas fa-user"></i> Profile</span></a></li>
@@ -48,14 +48,14 @@
               <li>
                 <form action="/logout" method="POST">
                   @csrf
-                  <button type="submit" class="dropdown-item" style="color: rgba(136, 1, 35, 0.9);"><i class="bi bi-box-arrow-right"></i> Logout</button>
+                  <button type="submit" class="dropdown-item" style="color: rgba(136, 1, 35, 0.9);"><i class="fas fa-sign-out-alt"></i> Logout</button>
                 </form>
               </li>
             </ul>
           </li>
           @else
           <li>
-            <a href="/login" class="nav-link">Login <i class="bi bi-box-arrow-right"></i></a>
+            <a href="/login" class="nav-link">Login <i class="fas fa-sign-in-alt"></i></a>
           </li>
           @endauth
         </ul>

@@ -1049,19 +1049,19 @@ section {
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
 }
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .contact-form input,
+.contact .contact-form textarea {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
 }
-.contact .php-email-form input {
+.contact .contact-form input {
     height: 44px;
 }
-.contact .php-email-form textarea {
+.contact .contact-form textarea {
     padding: 10px 12px;
 }
-.contact .php-email-form button[type="submit"] {
+.contact .contact-form button[type="submit"] {
     background: #ff6a24;
     border: 0;
     padding: 10px 30px;
@@ -1069,7 +1069,19 @@ section {
     transition: 0.4s;
     border-radius: 50px;
 }
-.contact .php-email-form button[type="submit"]:hover {
+.contact .contact-form button[type="submit"]:hover {
+    background: #c95119;
+}
+
+.contact .contact-form button[type="button"] {
+    background: #ff6a24;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+.contact .contact-form button[type="button"]:hover {
     background: #c95119;
 }
 @-webkit-keyframes animate-loading {
@@ -1238,6 +1250,21 @@ input[type="radio"]:checked + label {
     color: rgba(255, 255, 255, 0.9);
     background-color: rgba(136, 1, 35, 0.9);
     box-shadow: 0 15px 45px rgba(24, 249, 141, 0.2);
+}
+
+@media (max-width: 575px) {
+    label:hover {
+        border: none;
+        cursor: pointer;
+    }
+}
+.history {
+    width: 32%;
+}
+@media (max-width: 575px) {
+    .history {
+        width: 100%;
+    }
 }
 
 .btn-beli {
