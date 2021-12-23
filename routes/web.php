@@ -31,15 +31,12 @@ Route::get('/', function () {
     ]);
 });
 
-<<<<<<< HEAD
 Route::get('/detail', function () {
     return view('user.pulsa.detail', [
         "title" => "Detail"
     ]);
 });
 
-=======
->>>>>>> 98464edcaa6f477f914df279a87e180e1bcf232b
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
@@ -87,6 +84,12 @@ Route::get('/ewallet', function () {
 Route::get('/history', function () {
     return view('user.history.index', [
         "title" => "Riwayat Transaksi"
+    ]);
+});
+
+Route::get('/blank', function () {
+    return view('user.blank', [
+        "title" => "Coming Soon"
     ]);
 });
 
