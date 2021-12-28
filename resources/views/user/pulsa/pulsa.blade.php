@@ -29,7 +29,7 @@
           <div class="faq-list">
             <ul>
               <li data-aos="fade-up">
-                <div class="row jusify-content-center">
+                <div class="row justify-content-center">
                   @foreach ($pulsa as $p)
                   <div class="col-md-6 col-lg-4 p-0 mt-3" id="label">
                     <input type="radio" name="nominal" id="{{ $p->nominal }}" value="{{ $p->nominal }}-{{ $p->harga }}" required/>

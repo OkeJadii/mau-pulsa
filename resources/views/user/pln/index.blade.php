@@ -13,7 +13,7 @@
 
         <div class="row justify-content-center" data-aos="fade-left">
           <div class="col-lg-6 col-md-6 mt-3">
-            <a href="#" style="color: black">
+            <a href="/blank" style="color: black">
               <div class="icon-box border" data-aos="zoom-in" data-aos-delay="50">
                 <img src="/img/pln-prabayar.jpg" alt="Prabayar" class="img-fluid pe-2 rounded-circle" width="70px">
                 <h3 class="ms-3">PLN Prabayar</h3>
@@ -22,7 +22,7 @@
           </div>
 
           <div class="col-lg-6 col-md-6 mt-3">
-            <a href="#" style="color: black">
+            <a href="/blank" style="color: black">
               <div class="icon-box border" data-aos="zoom-in" data-aos-delay="50">
                 <img src="/img/pln-pascabayar.jpg" alt="Pascabayar" class="img-fluid pe-2 rounded-circle" width="70px">
                 <h3 class="ms-3">PLN Pascabayar</h3>

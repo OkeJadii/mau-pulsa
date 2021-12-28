@@ -46,9 +46,6 @@
                                         id="exampleFormControlInput1" placeholder="08xx" disabled />
 
                                 </li>
-
-
-
                             </ul>
                         </div>
 
@@ -56,9 +53,6 @@
                 </li>
             </ul>
         </div>
-
-
-
 
 
         <div class="faq-list">
@@ -111,7 +105,7 @@
                             <ul>
                               <li data-aos="fade-up">
                                 <div class="row jusify-content-center">
-                                 
+
                                   <div class="col-md-6 col-lg-3 p-0 mt-2" id="label">
                                     <input type="radio" name="nominal"  required/>
                                     <label  class="shadow">
@@ -131,7 +125,7 @@
                                     </label>
                                     <input type="hidden" name="provider" >
                                   </div>
-                
+
                                   <div class="col-md-6 col-lg-3 p-0 mt-2" id="label">
                                     <input type="radio" name="nominal"  required/>
                                     <label  class="shadow">
@@ -187,19 +181,19 @@
                                     </label>
                                     <input type="hidden" name="provider" >
                                   </div>
-                                
-                
-                
+
+
+
                                 </div>
-                                
+
                               </li>
                             </ul>
                           </div>
 
-                    
+
                     </div>
                 </li>
-               
+
             </ul>
             </li>
 

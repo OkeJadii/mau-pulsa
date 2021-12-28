@@ -138,9 +138,9 @@
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-xl-5 col-lg-6 d-flex justify-content-center align-items-stretch"
+        <div class="col-xl-5 col-lg-6 d-flex justify-content-center"
           data-aos="fade-right">
-        <img class="container-fluid" src="assets/img/about3.jpg" alt="" style="height:500px;">
+        <img class="container-fluid" src="assets/img/about3.png" alt="" style="height:500px;">
         </div>
         <div
           class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"

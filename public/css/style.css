@@ -710,11 +710,6 @@ section {
     line-height: 24px;
     font-size: 14px;
 }
-.about .video-box {
-    background: url("../assets/img/about2.png") center center no-repeat;
-    background-size: contain;
-    min-height: 300px;
-}
 
 @-webkit-keyframes pulsate-btn {
     0% {
