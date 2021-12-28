@@ -50,7 +50,6 @@
   <!-- ======= Product Section ======= -->
   <section id="product" class="features mt-4">
     <div class="container">
-
       <div class="section-title" data-aos="fade-up">
         <h2>Product</h2>
         <p>Daftar Produk</p>
@@ -58,53 +57,75 @@
 
       <div class="row" data-aos="fade-left">
         <div class="col-lg-3 col-md-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
+          <a href="/provider" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="50" style="transition: 1s">
             <i class="bi bi-phone" style="color: #ffbb2c;"></i>
-            <h3><a href="/provider">Pulsa</a></h3>
+            <h3>Pulsa</h3>
           </div>
+          </a>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-            <i class="bi bi-controller" style="color: #5578ff;"></i>
 
-            <h3><a href="">Voucher Game</a></h3>
-          </div>
-        </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+          <a href="/pln" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="150" style="transition: 1s">
             <i class="bi bi-lightning" style="color: #e80368;"></i>
-            <h3><a href="">Listrik PLN</a></h3>
+            <h3>Listrik PLN</h3>
           </div>
+          </a>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-            <i class="fas fa-signal" style="color: #e361ff;"></i>
-            <h3><a href="">Paket Data</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
-            <i class="fas fa-phone-volume" style="color: #47aeff;"></i>
-            <h3><a href="">Telkom</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-            <i class="fas fa-tint" style="color: #ffa76e;"></i>
-            <h3><a href="">PDAM</a></h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
+
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <a href="/ewallet" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="350" style="transition: 1s">
             <i class="fas fa-wallet" style="color: #11dbcf;"></i>
-            <h3><a href="">Uang Elektronik</a></h3>
+            <h3>Dompet Elektronik</h3>
           </div>
+          </a>
         </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-            <i class="far fa-hospital" style="color: #4233ff;"></i>
-            <h3><a href="">BPJS Kesehatan</a></h3>
+
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <a href="/blank" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="200" style="transition: 1s">
+            <i class="fas fa-signal" style="color: #e361ff;"></i>
+            <h3>Paket Data</h3>
           </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <a href="/blank" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="100" style="transition: 1s">
+            <i class="bi bi-controller" style="color: #5578ff;"></i>
+            <h3>Voucher Game</h3>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <a href="/blank" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="250" style="transition: 1s">
+            <i class="fas fa-phone-volume" style="color: #47aeff;"></i>
+            <h3>Telkom</h3>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <a href="/blank" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="300" style="transition: 1s">
+            <i class="fas fa-tint" style="color: #ffa76e;"></i>
+            <h3>PDAM</h3>
+          </div>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 mt-4">
+          <a href="/blank" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="400" style="transition: 1s">
+            <i class="far fa-hospital" style="color: #4233ff;"></i>
+            <h3>BPJS Kesehatan</h3>
+          </div>
+          </a>
         </div>
       </div>
 
@@ -113,13 +134,13 @@
   <!-- End Features Section -->
 
   <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+  <section id="about" class="about section-bg">
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"
+        <div class="col-xl-5 col-lg-6 d-flex justify-content-center"
           data-aos="fade-right">
-
+        <img class="container-fluid" src="assets/img/about3.png" alt="" style="height:500px;">
         </div>
         <div
           class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
@@ -128,22 +149,22 @@
           <p>Nikmati kemudahan transaksi dimana saja dan kapan saja dari genggaman anda.</p>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon"><i class="far fa-thumbs-up"></i></div>
-            <h4 class="title"><a href="">Praktis</a></h4>
+            <div class="icon"><i class="far fa-handshake"></i></div>
+            <h4 class="title"><a href="#">Praktis</a></h4>
             <p class="description"> Kapanpun dan dimanapun, nikmati beragam transaksi dapat dilakukan melalui website
               atau aplikasi. </p>
           </div>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon"><i class="fas fa-wifi"></i></div>
-            <h4 class="title"><a href="">Online 24 Jam</a></h4>
-            <p class="description"> Jam berapa pun kamu butuh pulsa, kapan pun dan di mana pun kamu memerlukannya,
-              sistem kami Online 24 jam </p>
+            <div class="icon"><i class="far fa-thumbs-up"></i></div>
+            <h4 class="title"><a href="#">Mudah</a></h4>
+            <p class="description"> Proses transaksi yang mudah dan langsung bisa diakuakn dan tanpa harus ribet mendaftar, sehingga
+              kamu tidak perlu ribet untuk melakukan transaksi </p>
           </div>
 
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon"><i class="fas fa-user-shield"></i></div>
-            <h4 class="title"><a href="">Aman</a></h4>
+            <h4 class="title"><a href="#">Aman</a></h4>
             <p class="description"> Pulsa Online memastikan semua informasi yang ada terjaga aman dalam setiap
               transaksi. </p>
           </div>
@@ -398,19 +419,19 @@
             <div class="address">
               <i class="bi bi-geo-alt"></i>
               <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>Jl.Wayan Gentuh 16X Dalung, Kuta Utara, Badung, Bali</p>
             </div>
 
             <div class="email">
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
-              <p>info@example.com</p>
+              <p>maupulsa2021@gmail.com</p>
             </div>
 
             <div class="phone">
               <i class="bi bi-phone"></i>
               <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
+              <p>+62 821 4624 4571</p>
             </div>
 
           </div>
@@ -418,23 +439,34 @@
         </div>
 
         <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terimakasih Yaaa!</strong> Pesan kamu sudah kami terima.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
 
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form name="contact-form" role="form" class="contact-form">
             <div class="row">
               <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <input type="text" class="form-control" placeholder="Your Name" id="name" aria-describedby="name" name="name" required>
               </div>
               <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" aria-describedby="email" required>
               </div>
             </div>
             <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" aria-describedby="subject" required autocomplete="off">
             </div>
             <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center mt-2">
+              <button type="submit" class="btn-kirim">Send Message</button>
+
+              <button class="text-center btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </div>
           </form>
 
         </div>
@@ -450,35 +482,34 @@
 <footer id="footer">
   <div class="footer-top">
     <div class="container">
-      <div class="row justify-content-center">
+        <div class="row justify-content-center">
 
-        <div class="col-lg-12 col-md-6">
-          <div class="footer-info">
-            <h3>MauPulsa</h3>
-            <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em>
-            </p>
-            <p>
-              A108 Adam Street <br>
-              NY 535022, USA<br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <div class="col-lg-12 col-md-6">
+                <div class="footer-info">
+                    <h3>MauPulsa</h3>
+                    <p class="pb-3"><em>"Semua yang kamu mau ada di MauPulsa"</em>
+                    </p>
+                    <p>
+                        Jl.Wayan Gentuh 16X <br>
+                        Dalung, Kuta Utara, Badung, Bali<br><br>
+                        <strong>Phone :</strong> +62 821 4624 4571<br>
+                        <strong>Email :</strong> maupulsa2021@gmail.com<br>
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.instagram.com/mau.pulsa/" class="instagram" target="blank"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
   <div class="container">
     <div class="copyright">
-      &copy; Copyright <strong><span>MauPulsa</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>MauPulsa</span></strong> <i class="bi bi-suit-heart-fill"></i>.
     </div>
   </div>
 </footer><!-- End Footer -->
@@ -486,3 +517,31 @@
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
     class="bi bi-arrow-up-short"></i></a>
 <div id="preloader"></div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzCZY5lFzt91VC38eWyF4Vl-i4LCKA8GOtczpKQt1vf4bCpMc2jFFgqITYdQ-HDeseV/exec';
+  const form = document.forms['contact-form'];
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const myAlert = document.querySelector('.my-alert');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    //ketika tombol submit diklik
+    //tampilkan tombol loading, hilangkan tombol kirim
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then((response) => {
+        //tampilkan tombol kirim, hilangkan tombol loading
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        //tampilkan alert
+        myAlert.classList.toggle('d-none');
+        //reset formnya
+        form.reset();
+        console.log('Success!', response);
+      })
+      .catch((error) => console.error('Error!', error.message));
+  });
+</script>

@@ -23,6 +23,7 @@
           <thead>
             <tr>
               <th>No</th>
+              <th width="15%">Icon</th>
               <th>Nama Provider</th>
               <th width="15%">Aksi</th>
             </tr>
@@ -30,6 +31,13 @@
           @foreach ($providers as $provider)
             <tr>
               <td>{{ $loop->iteration }}</td>
+              <td>
+                @if ($provider->icon)
+                  <img src="{{ asset('storage/' . $provider->icon) }}" alt="{{ $provider->name }}" class="img-fluid" width="50px">
+                @else
+                <i class="bi bi-phone" style="color: #850a1b; font-size:25px;"></i>
+                @endif
+              </td>
               <td>{{ $provider->name }}</td>
               <td>
                 <a href="/admin/provider/{{ $provider->id }}/edit" class="btn-primary btn"><i class="fas fa-edit"></i></a>

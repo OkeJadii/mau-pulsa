@@ -8,11 +8,11 @@
   <div class="col-lg-12">
     <div class="card py-3 border-left-primary shadow">
       <div class="card-body">
-        <form method="POST" action="/admin/provider" enctype="multipart/form-data">
+        <form method="POST" action="/admin/ewallet" enctype="multipart/form-data">
           @csrf
           <div class="form-group">
             <label for="name">Name : </label>
-            <input type="text" name="name" id="name" required autocomplete="off" class="form-control @error('name') is-invalid @enderror" placeholder="Nama Provider..">
+            <input type="text" name="name" id="name" required autocomplete="off" class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" placeholder="Nama Provider..">
             @error('name')
               <div class="invalid-feedback">
                 {{ $message }}
@@ -22,7 +22,7 @@
 
           <div class="form-group">
             <label for="slug">Slug : </label>
-            <input type="text" name="slug" id="slug" required autocomplete="off" class="form-control @error('slug') is-invalid @enderror" placeholder="Slug..">
+            <input type="text" name="slug" id="slug" required autocomplete="off" class="form-control @error('slug') is-invalid @enderror" value="{{ old('slug') }}" placeholder="Slug..">
             @error('slug')
               <div class="invalid-feedback">
                 {{ $message }}

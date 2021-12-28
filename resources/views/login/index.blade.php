@@ -5,13 +5,17 @@
 
   <div class="container">
     <div class="row px-3">
-      <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+      <div class="col-lg-9 card flex-row mx-auto px-0">
         <div class="img-left d-none d-md-flex"></div>
 
-        <div class="card-body">
-          <h4 class="title text-center mt-4">
-            Login Form
+        <div class="card-body col-9 col-lg-9">
+          <h4 class="title text-center mt-2 mb-4 fw-bold">
+            Login
           </h4>
+          <h6 class="text-center mb-3">
+            Haii, rindu nihh sama kamu, masuk dulu yuk..
+          </h6>
+          <hr class="mb-4">
 
           @if (session()->has('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -41,16 +45,16 @@
 
               <br>
 
-              <div class="mb-3">
+              {{-- <div class="mb-3">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="cb1" name="remember">
                   <label class="custom-control-label" for="cb1">Remember me</label>
                 </div>
-              </div>
+              </div> --}}
 
               <div class="mb-3">
-                <button type="submit" class="button-login">
-                  Login
+                <button type="submit" class="button-login" style="width:100%">
+                  Login <i class="fas fa-unlock-alt"></i>
                 </button>
               </div>
 

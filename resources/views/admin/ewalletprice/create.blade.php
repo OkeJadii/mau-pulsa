@@ -2,13 +2,13 @@
 
 @section('content')
   <div class="col mb-2">
-    <h1 class="text-center">Form Tambah Data Pulsa</h1>
+    <h1 class="text-center">Form Tambah Data Harga Top Up</h1>
   </div>
 
   <div class="col-lg-12">
     <div class="card py-3 border-left-primary shadow">
       <div class="card-body">
-        <form method="POST" action="/admin/pulsa">
+        <form method="POST" action="/admin/ewalletprice">
           @csrf
           <div class="form-group">
             <label for="nominal">NOMINAL : </label>
@@ -31,13 +31,13 @@
           </div>
 
           <div class="form-group">
-            <label for="provider">PROVIDER : </label>
-            <select class="form-select" name="provider_id">
-              @foreach ($providers as $provider)
-                @if (old('provider_id') == $provider->id)
-                  <option value="{{ $provider->id }}" selected>{{ $provider->name }}</option>
+            <label for="ewallet">E-Wallet : </label>
+            <select class="form-select" name="ewallet_id">
+              @foreach ($ewallets as $ewallet)
+                @if (old('ewallet_id') == $ewallet->id)
+                  <option value="{{ $ewallet->id }}" selected>{{ $ewallet->name }}</option>
                 @else
-                  <option value="{{ $provider->id }}">{{ $provider->name }}</option>
+                  <option value="{{ $ewallet->id }}">{{ $ewallet->name }}</option>
                 @endif
               @endforeach
             </select>

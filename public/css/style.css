@@ -710,79 +710,6 @@ section {
     line-height: 24px;
     font-size: 14px;
 }
-.about .video-box {
-    background: url("../assets/img/about2.png") center center no-repeat;
-    background-size: contain;
-    min-height: 300px;
-}
-.about .play-btn {
-    width: 94px;
-    height: 94px;
-    background: radial-gradient(#3f43fd 50%, rgba(136, 1, 35, 0.9) 52%);
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    left: calc(50% - 47px);
-    top: calc(50% - 47px);
-    overflow: hidden;
-}
-.about .play-btn::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-40%) translateY(-50%);
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 15px solid #fff;
-    z-index: 100;
-    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-.about .play-btn::before {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-    -webkit-animation: pulsate-btn 2s;
-    animation: pulsate-btn 2s;
-    -webkit-animation-direction: forwards;
-    animation-direction: forwards;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: steps;
-    animation-timing-function: steps;
-    opacity: 1;
-    border-radius: 50%;
-    border: 5px solid rgba(63, 67, 253, 0.7);
-    top: -15%;
-    left: -15%;
-    background: rgba(198, 16, 0, 0);
-}
-.about .play-btn:hover::after {
-    border-left: 15px solid #3f43fd;
-    transform: scale(20);
-}
-.about .play-btn:hover::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-40%) translateY(-50%);
-    width: 0;
-    height: 0;
-    border: none;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 15px solid #fff;
-    z-index: 200;
-    -webkit-animation: none;
-    animation: none;
-    border-radius: 0;
-}
 
 @-webkit-keyframes pulsate-btn {
     0% {
@@ -1009,6 +936,13 @@ section {
     left: 20px;
     color: #ff6a24;
 }
+.faq .faq-list .icon-check {
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #ff6a24;
+}
 .faq .faq-list .icon-show,
 .faq .faq-list .icon-close {
     font-size: 24px;
@@ -1110,19 +1044,19 @@ section {
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
 }
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .contact-form input,
+.contact .contact-form textarea {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
 }
-.contact .php-email-form input {
+.contact .contact-form input {
     height: 44px;
 }
-.contact .php-email-form textarea {
+.contact .contact-form textarea {
     padding: 10px 12px;
 }
-.contact .php-email-form button[type="submit"] {
+.contact .contact-form button[type="submit"] {
     background: #ff6a24;
     border: 0;
     padding: 10px 30px;
@@ -1130,7 +1064,19 @@ section {
     transition: 0.4s;
     border-radius: 50px;
 }
-.contact .php-email-form button[type="submit"]:hover {
+.contact .contact-form button[type="submit"]:hover {
+    background: #c95119;
+}
+
+.contact .contact-form button[type="button"] {
+    background: #ff6a24;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+.contact .contact-form button[type="button"]:hover {
     background: #c95119;
 }
 @-webkit-keyframes animate-loading {
@@ -1262,4 +1208,72 @@ section {
     #footer .footer-top .footer-info {
         margin: -20px 0 30px 0;
     }
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+}
+
+label {
+    height: 150px;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    color: rgba(136, 1, 35, 0.9);
+    transition: 0.5s;
+    padding: 20px;
+    border: 1px solid rgba(136, 1, 35, 0.9);
+}
+
+label:hover {
+    border: 6px solid rgba(136, 1, 35, 0.9);
+    cursor: pointer;
+}
+
+label > span {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 80%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+input[type="radio"]:checked + label {
+    /* border: 6px solid rgba(185, 40, 77, 0.9); */
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(136, 1, 35, 0.9);
+    box-shadow: 0 15px 45px rgba(24, 249, 141, 0.2);
+}
+
+@media (max-width: 575px) {
+    label:hover {
+        border: none;
+        cursor: pointer;
+    }
+}
+.history {
+    width: 32%;
+}
+@media (max-width: 575px) {
+    .history {
+        width: 100%;
+    }
+}
+
+.btn-beli {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #ff6a24;
+}
+.btn-beli:hover {
+    background: #af3c06;
 }

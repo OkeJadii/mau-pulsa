@@ -8,24 +8,27 @@
     <section id="features" class="features">
       <div class="container">
         <div class="section-title-capitalize" data-aos="fade-up">
-          <p>Daftar Provider Pulsa</p>
+          <p>Daftar Pembayaran PLN</p>
         </div>
 
         <div class="row justify-content-center" data-aos="fade-left">
-          @foreach ($providers as $provider)
-          <div class="col-lg-4 col-md-3 mt-3">
-            <a href="/pulsa?provider={{ $provider->slug }}" style="color: black">
-              <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-                @if ($provider->icon)
-                <img src="{{ asset('storage/' . $provider->icon) }}" alt="{{ $provider->name }}" class="img-fluid pe-2" width="50px">
-                @else
-                <i class="bi bi-phone" style="color: #e80368;"></i>
-                @endif
-                <h3>{{ $provider->name }}</h3>
+          <div class="col-lg-6 col-md-6 mt-3">
+            <a href="/blank" style="color: black">
+              <div class="icon-box border" data-aos="zoom-in" data-aos-delay="50">
+                <img src="/img/pln-prabayar.jpg" alt="Prabayar" class="img-fluid pe-2 rounded-circle" width="70px">
+                <h3 class="ms-3">PLN Prabayar</h3>
               </div>
             </a>
           </div>
-          @endforeach
+
+          <div class="col-lg-6 col-md-6 mt-3">
+            <a href="/blank" style="color: black">
+              <div class="icon-box border" data-aos="zoom-in" data-aos-delay="50">
+                <img src="/img/pln-pascabayar.jpg" alt="Pascabayar" class="img-fluid pe-2 rounded-circle" width="70px">
+                <h3 class="ms-3">PLN Pascabayar</h3>
+              </div>
+            </a>
+          </div>
         </div>
 
       </div>

@@ -5,19 +5,24 @@
 
   <div class="container">
     <div class="row px-3">
-      <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+      <div class="col-lg-9 card flex-row mx-auto px-0">
         <div class="img-left d-none d-md-flex"></div>
 
-        <div class="card-body">
-          <h4 class="title text-center mt-4">
-            Register Form
+        <div class="card-body col-9 col-lg-9">
+          <h4 class="title text-center mt-2 mb-4 fw-bold">
+            Register
           </h4>
+
+          <h6 class="text-center mb-3">
+            Ehh, kayaknya aku gak pernah ngeliat kamu dehh, kenalan dulu yuk..
+          </h6>
+          <hr class="mb-4">
 
           <form action="/register" method="POST" class="form-box px-3">
           @csrf
               <div class="form-input">
                 <span><i class="fas fa-user"></i></span>
-                <input type="text" name="name" placeholder="Name" required class="@error('username') is-invalid @enderror" value="{{ old('name') }}"/>
+                <input type="text" name="name" placeholder="Name" required class="@error('username') is-invalid @enderror" value="{{ old('name') }}" autofocus autocomplete="off"/>
                 @error('username')
                   <div class="invalid-feedback">
                     {{ $message }}
@@ -27,7 +32,7 @@
 
               <div class="form-input">
                 <span><i class="far fa-user"></i></i></span>
-                <input type="text" name="username" placeholder="Username" required class="@error('email') is-invalid @enderror" value="{{ old('username') }}" />
+                <input type="text" name="username" placeholder="Username" required class="@error('email') is-invalid @enderror" value="{{ old('username') }}" autocomplete="off"/>
                 @error('email')
                   <div class="invalid-feedback">
                     {{ $message }}
@@ -53,8 +58,8 @@
               <br>
 
               <div class="mb-3">
-                <button type="submit" class="button-login">
-                  Register
+                <button type="submit" class="button-login" style="width: 100%">
+                  Register <i class="fas fa-paper-plane"></i>
                 </button>
               </div>
 

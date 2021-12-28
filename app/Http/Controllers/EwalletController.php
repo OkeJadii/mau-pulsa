@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Provider;
+use App\Models\Ewallet;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class ProviderController extends Controller
+class EwalletController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class ProviderController extends Controller
      */
     public function index()
     {
-        return view('admin.provider.index', [
-            'title' => 'Data Provider Pulsa',
-            'providers' => Provider::all()
+        return view('admin.ewallet.index', [
+            'title' => 'Data E-Wallet',
+            'ewallets' => Ewallet::all()
         ]);
     }
 
@@ -28,8 +28,8 @@ class ProviderController extends Controller
      */
     public function create()
     {
-        return view('admin.provider.create', [
-            'title' => 'Tambah Data Provider'
+        return view('admin.ewallet.create', [
+            'title' => 'Tambah Data E-Wallet'
         ]);
     }
 
@@ -48,21 +48,21 @@ class ProviderController extends Controller
         ]);
 
         if ($request->file('icon')) {
-            $validatedData['icon'] = $request->file('icon')->store('provider-icon');
+            $validatedData['icon'] = $request->file('icon')->store('ewallet-icon');
         }
 
-        Provider::create($validatedData);
+        Ewallet::create($validatedData);
 
-        return redirect('/admin/provider')->with('success', '<strong>Data Provider Berhasil Di Tambahkan</strong>');;
+        return redirect('/admin/ewallet')->with('success', '<strong>Data E-Wallet Berhasil Di Tambahkan</strong>');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Provider  $provider
+     * @param  \App\Models\Ewallet  $ewallet
      * @return \Illuminate\Http\Response
      */
-    public function show(Provider $provider)
+    public function show(Ewallet $ewallet)
     {
         //
     }
@@ -70,14 +70,14 @@ class ProviderController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Provider  $provider
+     * @param  \App\Models\Ewallet  $ewallet
      * @return \Illuminate\Http\Response
      */
-    public function edit(Provider $provider)
+    public function edit(Ewallet $ewallet)
     {
-        return view('admin.provider.edit', [
+        return view('admin.ewallet.edit', [
             'title' => 'Edit Data Provider',
-            'provider' => $provider
+            'ewallet' => $ewallet
         ]);
     }
 
@@ -85,10 +85,10 @@ class ProviderController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Provider  $provider
+     * @param  \App\Models\Ewallet  $ewallet
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Provider $provider)
+    public function update(Request $request, Ewallet $ewallet)
     {
         $rules = [
             'name' => 'required|min:2|max:255',
@@ -102,29 +102,29 @@ class ProviderController extends Controller
             if ($request->oldImage) {
                 Storage::delete($request->oldImage);
             }
-            $validatedData['icon'] = $request->file('icon')->store('provider-icon');
+            $validatedData['icon'] = $request->file('icon')->store('ewallet-icon');
         }
 
-        Provider::where('id', $provider->id)
+        Ewallet::where('id', $ewallet->id)
             ->update($validatedData);
 
-        return redirect('/admin/provider')->with('success', '<strong>Data Provider Berhasil Di Ubah!</strong>');
+        return redirect('/admin/ewallet')->with('success', '<strong>Data E-Wallet Berhasil Di Ubah!</strong>');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Provider  $provider
+     * @param  \App\Models\Ewallet  $ewallet
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Provider $provider)
+    public function destroy(Ewallet $ewallet)
     {
-        if ($provider->icon) {
-            Storage::delete($provider->icon);
+        if ($ewallet->icon) {
+            Storage::delete($ewallet->icon);
         }
 
-        Provider::destroy($provider->id);
+        Ewallet::destroy($ewallet->id);
 
-        return redirect('/admin/provider')->with('success', '<strong>Data Provider Telah Berhasil Terhapus!</strong>');;
+        return redirect('/admin/ewallet')->with('success', '<strong>Data E-Wallet Telah Berhasil Terhapus!</strong>');
     }
 }

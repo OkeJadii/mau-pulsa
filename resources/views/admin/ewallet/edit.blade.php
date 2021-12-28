@@ -8,12 +8,12 @@
   <div class="col-lg-12">
     <div class="card py-3 border-left-primary shadow">
       <div class="card-body">
-        <form method="POST" action="/admin/provider/{{ $provider->id }}" enctype="multipart/form-data">
+        <form method="POST" action="/admin/ewallet/{{ $ewallet->id }}" enctype="multipart/form-data">
           @method('put')
           @csrf
           <div class="form-group">
             <label for="name">Name : </label>
-            <input type="text" name="name" id="name" required autocomplete="off" class="form-control @error('name') is-invalid @enderror" placeholder="Nama provider.." value="{{ $provider->name }}">
+            <input type="text" name="name" id="name" required autocomplete="off" class="form-control @error('name') is-invalid @enderror" placeholder="Nama ewallet.." value="{{ $ewallet->name }}">
             @error('name')
               <div class="invalid-feedback">
                 {{ $message }}
@@ -23,7 +23,7 @@
 
           <div class="form-group">
             <label for="slug">Slug : </label>
-            <input type="text" name="slug" id="slug" required autocomplete="off" class="form-control @error('slug') is-invalid @enderror" placeholder="Slug.." value="{{ $provider->slug }}">
+            <input type="text" name="slug" id="slug" required autocomplete="off" class="form-control @error('slug') is-invalid @enderror" placeholder="Slug.." value="{{ $ewallet->slug }}">
             @error('slug')
               <div class="invalid-feedback">
                 {{ $message }}
@@ -33,9 +33,9 @@
 
           <div class="form-group">
             <label for="icon">Icon : </label>
-            <input type="hidden" name="oldImage" value="{{ $provider->icon }}">
-            @if ($provider->icon)
-              <img src="{{ asset('storage/' . $provider->icon) }}" class="img-preview img-fluid d-block" width="100px">
+            <input type="hidden" name="oldImage" value="{{ $ewallet->icon }}">
+            @if ($ewallet->icon)
+              <img src="{{ asset('storage/' . $ewallet->icon) }}" class="img-preview img-fluid d-block" width="100px">
             @else
               <img class="img-preview img-fluid" width="100px">
             @endif
