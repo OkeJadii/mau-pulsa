@@ -87,4 +87,10 @@ Route::get('/history', function () {
     ]);
 });
 
+Route::get('/blank', function () {
+    return view('user.blank', [
+        "title" => "Coming Soon"
+    ]);
+});
+
 Route::get('/ewalletprice', [UserEwalletController::class, 'index']);

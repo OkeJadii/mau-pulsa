@@ -84,7 +84,7 @@
         </div>
 
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <a href="#" style="color: black">
+          <a href="/blank" style="color: black">
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="200" style="transition: 1s">
             <i class="fas fa-signal" style="color: #e361ff;"></i>
             <h3>Paket Data</h3>
@@ -93,7 +93,7 @@
         </div>
 
         <div class="col-lg-3 col-md-4 mt-4">
-          <a href="#" style="color: black">
+          <a href="/blank" style="color: black">
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="100" style="transition: 1s">
             <i class="bi bi-controller" style="color: #5578ff;"></i>
             <h3>Voucher Game</h3>
@@ -102,7 +102,7 @@
         </div>
 
         <div class="col-lg-3 col-md-4 mt-4">
-          <a href="#" style="color: black">
+          <a href="/blank" style="color: black">
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="250" style="transition: 1s">
             <i class="fas fa-phone-volume" style="color: #47aeff;"></i>
             <h3>Telkom</h3>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="col-lg-3 col-md-4 mt-4">
-          <a href="#" style="color: black">
+          <a href="/blank" style="color: black">
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="300" style="transition: 1s">
             <i class="fas fa-tint" style="color: #ffa76e;"></i>
             <h3>PDAM</h3>
@@ -120,7 +120,7 @@
         </div>
 
         <div class="col-lg-3 col-md-4 mt-4">
-          <a href="#" style="color: black">
+          <a href="/blank" style="color: black">
           <div class="icon-box" data-aos="zoom-in" data-aos-delay="400" style="transition: 1s">
             <i class="far fa-hospital" style="color: #4233ff;"></i>
             <h3>BPJS Kesehatan</h3>
@@ -138,9 +138,9 @@
     <div class="container-fluid">
 
       <div class="row">
-        <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch"
+        <div class="col-xl-5 col-lg-6 d-flex justify-content-center align-items-stretch"
           data-aos="fade-right">
-
+        <img class="container-fluid" src="assets/img/about3.jpg" alt="" style="height:500px;">
         </div>
         <div
           class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"

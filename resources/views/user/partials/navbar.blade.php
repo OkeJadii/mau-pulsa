@@ -14,7 +14,7 @@
             <li><a href="/provider">Pulsa</a></li>
             <li><a href="/pln">PLN</a></li>
             <li><a href="/ewallet">E-Wallet</a></li>
-            <li><a href="#">Paket Data</a></li>
+            <li><a href="/blank">Paket Data</a></li>
           </ul>
         </li>
         <li><a class="nav-link scrollto" href="/">About</a></li>
