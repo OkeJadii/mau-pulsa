@@ -55,4 +55,11 @@ Route::get('/provider', function () {
     ]);
 });
 
+Route::get('/bayar', function () {
+    return view('user.pulsa.bayarp',[ 
+        "title" => "Pembayaran Pulsa",
+        // "bayarp" => bayarp::all()
+    ]);
+});
+
 Route::get('/pulsa', [UserPulsaController::class, 'index']);
