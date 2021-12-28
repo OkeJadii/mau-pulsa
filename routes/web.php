@@ -31,15 +31,12 @@ Route::get('/', function () {
     ]);
 });
 
-<<<<<<< HEAD
 Route::get('/detail', function () {
     return view('user.pulsa.detail', [
         "title" => "Detail"
     ]);
 });
 
-=======
->>>>>>> 98464edcaa6f477f914df279a87e180e1bcf232b
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
