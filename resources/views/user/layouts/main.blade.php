@@ -39,7 +39,7 @@
           <div class="row justify-content-center">
 
               <div class="col-lg-12 col-md-6">
-                  <div class="footer-info">
+                  <div class="footer-info mb-0 pb-2">
                       <h3>MauPulsa</h3>
                       <p class="pb-3"><em>"Semua yang kamu mau ada di MauPulsa"</em>
                       </p>

@@ -24,4 +24,21 @@ class UserEwalletController extends Controller
             "icon" => $icon
         ]);
     }
+
+    public function detail(Request $request)
+    {
+        $produk = $request['nominal'];
+        $produk = explode('-', $produk);
+        $ewallet = $request['ewallet'];
+        $noHp = $request['noHp'];
+
+        $test = [
+            "ewallet" => $ewallet,
+            "noHp" => $noHp,
+            "nominal" => $produk[0],
+            "harga" => $produk[1]
+        ];
+
+        dd($test);
+    }
 }

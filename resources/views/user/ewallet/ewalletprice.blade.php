@@ -11,7 +11,7 @@
           <p class="d-inline">TOP UP SALDO {{ $ewallet }}</p>  <img src="{{ asset('storage/' . $icon) }}" alt="{{ $title}}" width="70px" class="ms-1 pb-3">
         </div>
 
-        <form method="POST" action="/pulsa-detail">
+        <form method="POST" action="/ewallet/detail">
           @csrf
           <div class="faq-list">
             <ul>
@@ -39,7 +39,7 @@
                       <p class="card-title text-center">Harga :</p>
                       <h5 class="card-text mb-2 harga text-center">Rp{{ $ewalletprice->harga }}</h5>
                     </label>
-                    <input type="hidden" name="provider" value="{{ $ewalletprice->ewallet->name }}">
+                    <input type="hidden" name="ewallet" value="{{ $ewalletprice->ewallet->name }}">
                   </div>
                   @endforeach
 

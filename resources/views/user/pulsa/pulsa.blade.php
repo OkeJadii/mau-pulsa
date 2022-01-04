@@ -11,7 +11,7 @@
           <p class="d-inline">ISI PULSA {{ $provider }}</p>  <img src="{{ asset('storage/' . $icon) }}" alt="{{ $title}}" width="50px" class="ms-2 pb-3">
         </div>
 
-        <form method="POST" action="/pulsa-detail">
+        <form method="POST" action="/pulsa/detail">
           @csrf
           <div class="faq-list">
             <ul>
@@ -62,14 +62,12 @@
 
                 </div>
                 <button type="submit" class="btn-beli mt-5 border-0" style="width: 100%">BELI SEKARANG! <i class="fas fa-shopping-bag"></i></button>
-                <a href="/detail">test</a>
               </li>
             </ul>
           </div>
         </form>
       </div>
     </section>
-    <!-- End F.A.Q Section -->
   </main>
 
 @endsection

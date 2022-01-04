@@ -31,7 +31,7 @@
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                             Jumlah Users</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">150 Orang</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">35 Orang</div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-users fa-2x text-gray-300"></i>
@@ -68,16 +68,18 @@
         </div>
         <div class="card-body">
           <div class="row">
+            @foreach ($users as $user)
               <div class="col-lg-12 ">
-                <h5 class="h5 mb-0 text-gray-800 text-center"><b>Name</b></h5>
-                <h6 class="h6 mb-0 text-gray-800 text-center">Username</h6>
-                <h6 class="h6 mb-0 text-gray-800 text-center">Email</h6>
+                <h5 class="h5 mb-0 text-gray-800 text-center"><b>{{ $user["name"] }}</b></h5>
+                <h6 class="h6 mb-0 text-gray-800 text-center">{{ $user["username"] }}</h6>
+                <h6 class="h6 mb-0 text-gray-800 text-center">{{ $user["email"] }}</h6>
               </div>
 
               <div class="col-lg-12 mb-2">
                 <!-- Divider -->
                 <hr class="sidebar-divider ">
               </div>
+            @endforeach
           </div>
 
           <div class="row">
@@ -132,26 +134,29 @@
     <div class="col-md-4 mb-4" id="top3">
       <div class="card shadow mb-4">
         <div class="card-header py-3 text-center bg-success">
-          <h6 class="m-0 font-weight-bold border-0 text-white text-center">DATA TRANSAKSI</h6>
+          <h6 class="m-0 font-weight-bold border-0 text-white text-center">DATA EWALLET</h6>
         </div>
         <div class="card-body">
           <div class="row">
-              <div class="col-lg-12 ">
-                <h5 class="h5 mb-0 text-gray-800 text-center"><b>Name</b></h5>
-                <h6 class="h6 mb-0 text-gray-800 text-center">Username</h6>
-                <h6 class="h6 mb-0 text-gray-800 text-center">Email</h6>
-              </div>
+            @foreach ($ewallets as $ewallet)
+            <div class="col-lg-2 mb-2">
+              <img src="{{ asset('storage/' . $ewallet->icon) }}" alt="{{ $ewallet->name }}" width="100%" style="border-radius: 5px;">
+            </div>
+            <div class="col-lg-10 ">
+              <h5 class="h5 mb-0 text-gray-800"><b>{{ $ewallet->name }}</b></h5>
+            </div>
 
               <div class="col-lg-12 mb-2">
                 <!-- Divider -->
                 <hr class="sidebar-divider ">
               </div>
+            @endforeach
           </div>
 
           <div class="row">
             <div class="col-lg-12">
               <center>
-                <a href="#" class="btn btn-success btn-md mt-4">
+                <a href="/admin/ewallet" class="btn btn-success btn-md mt-4">
                   <i class="fas fa-eye"></i>
                   Lihat semua Transaksi
                 </a>

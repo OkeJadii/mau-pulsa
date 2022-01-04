@@ -140,7 +140,7 @@
       <div class="row">
         <div class="col-xl-5 col-lg-6 d-flex justify-content-center"
           data-aos="fade-right">
-        <img class="container-fluid" src="assets/img/about3.png" alt="" style="height:500px;">
+        <img class="img-fluid" src="assets/img/about3.png" alt="" style="height:500px;">
         </div>
         <div
           class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
@@ -485,7 +485,7 @@
         <div class="row justify-content-center">
 
             <div class="col-lg-12 col-md-6">
-                <div class="footer-info">
+                <div class="footer-info mb-0 pb-2">
                     <h3>MauPulsa</h3>
                     <p class="pb-3"><em>"Semua yang kamu mau ada di MauPulsa"</em>
                     </p>

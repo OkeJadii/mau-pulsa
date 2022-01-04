@@ -1276,4 +1276,5 @@ input[type="radio"]:checked + label {
 }
 .btn-beli:hover {
     background: #af3c06;
+    color: white;
 }

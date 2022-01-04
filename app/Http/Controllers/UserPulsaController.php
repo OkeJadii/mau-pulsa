@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Pulsa;
 use App\Models\Provider;
+use App\Models\Transaction;
 
 class UserPulsaController extends Controller
 {
@@ -32,21 +33,37 @@ class UserPulsaController extends Controller
         $provider = $request['provider'];
         $noHp = $request['noHp'];
 
-        $test = [
-            'noHp' => $noHp,
-            'provider' => $provider,
-            'nominal' => $produk[0],
-            'harga' => $produk[1]
-        ];
+        return view('user.pulsa.detail', [
+            "title" => "Detail Pembelian",
+            "noHp" => $noHp,
+            "provider" => $provider,
+            "nominal" => $produk[0],
+            "harga" => $produk[1]
+        ]);
+    }
 
-        dd($test);
+    public function transaction(Request $request)
+    {
+        $validatedData = $request->validate([
+            'produk' => 'required|max:255',
+            'no_pelanggan' => 'required|max:255',
+            'nominal' => 'required|max:255',
+            'harga' => 'required|max:255',
+            'email' => 'required|max:255'
+        ]);
 
-        // return view('user.pulsa', [
-        //     "title" => "Detail Pembelian",
-        //     "noHp" => $noHp,
-        //     "provider" => $provider,
-        //     "nominal" => $produk[0],
-        //     "harga" => $produk[1]
-        // ]);
+        $validatedData['user_id'] = auth()->user()->id;
+
+        Transaction::create($validatedData);
+
+        // return redirect('/bayar/pulsa');
+
+        return view('user.pulsa.bayar', [
+            "title" => "Pembayaran Pulsa",
+            "produk" => $request["produk"],
+            "noHp" => $request["no_pelanggan"],
+            "nominal" => $request["nominal"],
+            "harga" => $request["harga"]
+        ]);
     }
 }
