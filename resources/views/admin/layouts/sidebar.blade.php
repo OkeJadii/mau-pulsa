@@ -32,7 +32,6 @@
         <h6 class="collapse-header">Tabels Data:</h6>
         <a class="collapse-item" href="/admin/provider">Providers</a>
         <a class="collapse-item" href="/admin/pulsa">Prices</a>
-        <a class="collapse-item" href="#">Transactions</a>
       </div>
     </div>
   </li>
@@ -48,25 +47,16 @@
         <h6 class="collapse-header">Tabels Data:</h6>
         <a class="collapse-item" href="/admin/ewallet">E-Wallet</a>
         <a class="collapse-item" href="/admin/ewalletprice">Prices</a>
-        <a class="collapse-item" href="#">Transaction</a>
       </div>
     </div>
   </li>
 
   <!-- Nav Item - Utilities Collapse Menu -->
   <li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-      <i class="fas fa-bolt"></i>
-      <span>PLN</span>
-    </a>
-    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-      <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Tabels Data:</h6>
-        <a class="collapse-item" href="#">Test</a>
-        <a class="collapse-item" href="#">Test</a>
-        <a class="collapse-item" href="#">Test</a>
-      </div>
-    </div>
+    <a class="nav-link" href="/admin/transaction">
+      <i class="fas fa-receipt"></i>
+      <span>Transactions</span></a
+    >
   </li>
 
   <!-- Divider -->
@@ -78,8 +68,8 @@
   <!-- Nav Item - Blank Page -->
   <li class="nav-item">
     <a class="nav-link" href="#">
-      <i class="fas fa-fw fa-folder"></i>
-      <span>Blank Page</span></a
+      <i class="fas fa-users"></i>
+      <span>Users</span></a
     >
   </li>
 
@@ -87,7 +77,7 @@
   <li class="nav-item">
     <a class="nav-link" href="#">
       <i class="fas fa-fw fa-folder"></i>
-      <span>Test</span></a
+      <span>Blank</span></a
     >
   </li>
 

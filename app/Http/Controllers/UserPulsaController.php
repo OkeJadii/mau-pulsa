@@ -53,10 +53,9 @@ class UserPulsaController extends Controller
         ]);
 
         $validatedData['user_id'] = auth()->user()->id;
+        $validatedData['jenis'] = "pulsa";
 
         Transaction::create($validatedData);
-
-        // return redirect('/bayar/pulsa');
 
         return view('user.pulsa.bayar', [
             "title" => "Pembayaran Pulsa",

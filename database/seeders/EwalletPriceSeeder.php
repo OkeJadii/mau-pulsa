@@ -17,32 +17,32 @@ class EwalletPriceSeeder extends Seeder
         EwalletPrice::create([
             'ewallet_id' => 1,
             'nominal' => '20.000',
-            'harga' => '19.980'
+            'harga' => '21.000'
         ]);
         EwalletPrice::create([
             'ewallet_id' => 1,
             'nominal' => '25.000',
-            'harga' => '24.980'
+            'harga' => '26.000'
         ]);
         EwalletPrice::create([
             'ewallet_id' => 1,
             'nominal' => '30.000',
-            'harga' => '29.980'
+            'harga' => '31.000'
         ]);
         EwalletPrice::create([
             'ewallet_id' => 1,
             'nominal' => '50.000',
-            'harga' => '49.980'
+            'harga' => '51.000'
         ]);
         EwalletPrice::create([
             'ewallet_id' => 1,
             'nominal' => '100.000',
-            'harga' => '99.980'
+            'harga' => '101.000'
         ]);
         EwalletPrice::create([
             'ewallet_id' => 1,
             'nominal' => '150.000',
-            'harga' => '149.980'
+            'harga' => '151.000'
         ]);
 
 
@@ -83,32 +83,32 @@ class EwalletPriceSeeder extends Seeder
         EwalletPrice::create([
             'ewallet_id' => 3,
             'nominal' => '20.000',
-            'harga' => '20.500'
+            'harga' => '21.000'
         ]);
         EwalletPrice::create([
             'ewallet_id' => 3,
             'nominal' => '25.000',
-            'harga' => '25.500'
+            'harga' => '26.000'
         ]);
         EwalletPrice::create([
             'ewallet_id' => 3,
             'nominal' => '30.000',
-            'harga' => '30.500'
+            'harga' => '31.000'
         ]);
         EwalletPrice::create([
             'ewallet_id' => 3,
             'nominal' => '50.000',
-            'harga' => '50.500'
+            'harga' => '51.000'
         ]);
         EwalletPrice::create([
             'ewallet_id' => 3,
             'nominal' => '100.000',
-            'harga' => '100.500'
+            'harga' => '101.000'
         ]);
         EwalletPrice::create([
             'ewallet_id' => 3,
             'nominal' => '150.000',
-            'harga' => '150.500'
+            'harga' => '151.000'
         ]);
     }
 }

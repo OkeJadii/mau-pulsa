@@ -68,7 +68,7 @@
                   kecepatan dalam
                   bertransaksi, anda cukup isi nomor handphone anda, memlih nominal pulsa yang anda
                   inginkan, kemudian
-                  pilih metode pembayaran yang paling sesuai dengan Anda.
+                  scan kode QRIS yang tersedia.
                 </p>
               </div>
             </li>
@@ -81,9 +81,7 @@
                   isi ulang
                   paket data untuk anda yang butuh kuota internet dengan harga murah, pembayaran BPJS,
                   Pembayaran PLN,
-                  cicilan, tagihan Telkom, dan PDAM semua dengan proses yang sangat mudah, cepat, dan
-                  customer service
-                  yang aktif pada Senin - Minggu pukul 08.00 - 22.00 WIB.
+                  cicilan, tagihan Telkom, dan PDAM semua dengan proses yang sangat mudah dan praktis.
                 </p>
               </div>
             </li>

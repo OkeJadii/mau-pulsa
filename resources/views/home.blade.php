@@ -66,19 +66,19 @@
         </div>
 
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <a href="/pln" style="color: black">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="150" style="transition: 1s">
-            <i class="bi bi-lightning" style="color: #e80368;"></i>
-            <h3>Listrik PLN</h3>
+          <a href="/ewallet" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="350" style="transition: 1s">
+            <i class="fas fa-wallet" style="color: #11dbcf;"></i>
+            <h3>Dompet Elektronik</h3>
           </div>
           </a>
         </div>
 
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <a href="/ewallet" style="color: black">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="350" style="transition: 1s">
-            <i class="fas fa-wallet" style="color: #11dbcf;"></i>
-            <h3>Dompet Elektronik</h3>
+          <a href="/blank" style="color: black">
+          <div class="icon-box" data-aos="zoom-in" data-aos-delay="150" style="transition: 1s">
+            <i class="bi bi-lightning" style="color: #e80368;"></i>
+            <h3>Listrik PLN</h3>
           </div>
           </a>
         </div>
@@ -353,8 +353,6 @@
                 - Nominal Pulsa Lebih Beragam:
                 Membeli pulsa di MauPulsa juga memberikan Anda lebih banyak pilihan nominalnya. Dengan begitu, Anda
                 dapat membeli pulsa dengan nominal yang sesuai dengan kebutuhan.
-                quis
-              </p>
             </div>
           </li>
 

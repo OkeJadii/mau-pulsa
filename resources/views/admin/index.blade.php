@@ -63,31 +63,35 @@
 
     <div class="col-md-4 mb-4" id="top3">
       <div class="card shadow mb-4">
-        <div class="card-header py-3 text-center bg-primary">
-          <h6 class="m-0 font-weight-bold border-0 text-white text-center">DATA USER</h6>
+        <div class="card-header py-3 text-center bg-secondary">
+          <h6 class="m-0 font-weight-bold border-0 text-white text-center">DATA TRANSAKSI</h6>
         </div>
         <div class="card-body">
           <div class="row">
-            @foreach ($users as $user)
+            @if ($transactions->count())
+            @foreach ($transactions as $transaction)
               <div class="col-lg-12 ">
-                <h5 class="h5 mb-0 text-gray-800 text-center"><b>{{ $user["name"] }}</b></h5>
-                <h6 class="h6 mb-0 text-gray-800 text-center">{{ $user["username"] }}</h6>
-                <h6 class="h6 mb-0 text-gray-800 text-center">{{ $user["email"] }}</h6>
+                <h5 class="h5 mb-0 text-gray-800 text-center"><b>{{ $transaction["no_pelanggan"] }}</b></h5>
+                <h6 class="h6 mb-0 text-gray-800 text-center">{{ $transaction["produk"] }}</h6>
+                <h6 class="h6 mb-0 text-gray-800 text-center">{{ $transaction["nominal"] }}</h6>
               </div>
 
               <div class="col-lg-12 mb-2">
                 <!-- Divider -->
                 <hr class="sidebar-divider ">
               </div>
-            @endforeach
+              @endforeach
+              @else
+              <p class="text-center">Belum Ada Transaksi</p>
+              @endif
           </div>
 
           <div class="row">
             <div class="col-lg-12">
               <center>
-                <a href="#" class="btn btn-primary btn-md mt-4">
+                <a href="/admin/transaction" class="btn btn-secondary btn-md mt-4">
                   <i class="fas fa-eye"></i>
-                  Lihat semua Users
+                  Lihat semua Transaksi
                 </a>
               </center>
             </div>
@@ -158,7 +162,42 @@
               <center>
                 <a href="/admin/ewallet" class="btn btn-success btn-md mt-4">
                   <i class="fas fa-eye"></i>
-                  Lihat semua Transaksi
+                  Lihat semua Ewallet
+                </a>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 mb-4" id="top3">
+      <div class="card shadow mb-4">
+        <div class="card-header py-3 text-center bg-primary">
+          <h6 class="m-0 font-weight-bold border-0 text-white text-center">DATA USER</h6>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            @foreach ($users as $user)
+              <div class="col-lg-12 ">
+                <h5 class="h5 mb-0 text-gray-800 text-center"><b>{{ $user["name"] }}</b></h5>
+                <h6 class="h6 mb-0 text-gray-800 text-center">{{ $user["username"] }}</h6>
+                <h6 class="h6 mb-0 text-gray-800 text-center">{{ $user["email"] }}</h6>
+              </div>
+
+              <div class="col-lg-12 mb-2">
+                <!-- Divider -->
+                <hr class="sidebar-divider ">
+              </div>
+            @endforeach
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <center>
+                <a href="#" class="btn btn-primary btn-md mt-4">
+                  <i class="fas fa-eye"></i>
+                  Lihat semua Users
                 </a>
               </center>
             </div>

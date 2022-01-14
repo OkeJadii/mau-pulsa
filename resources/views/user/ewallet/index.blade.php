@@ -39,28 +39,9 @@
         </div>
         <div class="faq-list">
           <ul>
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Beli Pulsa di MauPulsa Mudah, Cepat, Tidak Ribet <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  Kehabisan pulsa di zaman serba online ini? MauPulsa menyediakan layanan isi ulang pulsa
-                  kapan saja dan
-                  dengan segala macam metode pembayaran. Tidak perlu lagi kesulitan online tengah malam
-                  karena layanan
-                  isi ulang pulsa di MauPulsa aktif 24 jam dan support segala macam jenis pembayaran. Isi
-                  ulang pulsa
-                  operator Telkomsel, Indosat, XL, Tri, Axis, Bolt, dan Smartfren dengan beragam nominal
-                  yang tersedia
-                  mulai dari 5.000, 10.000 sampai 500.000, semua hadir untuk kemudahan anda membeli pulsa
-                  secara online.
-                  isinya.
-                </p>
-              </div>
-            </li>
-
             <li data-aos="fade-up" data-aos-delay="100">
               <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Banyak Jenis Pembayaran yang Tersedia<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+              <div id="faq-list-2" class="collapse show" data-bs-parent=".faq-list">
                 <p>
                   Berbagai jenis pembayaran yang kami sediakan seperti Kredivo, Debit BCA, Mandiri, VCN
                   BNI, CIMB Niaga,
@@ -68,7 +49,7 @@
                   kecepatan dalam
                   bertransaksi, anda cukup isi nomor handphone anda, memlih nominal pulsa yang anda
                   inginkan, kemudian
-                  pilih metode pembayaran yang paling sesuai dengan Anda.
+                  scan kode QRIS yang tersedia.
                 </p>
               </div>
             </li>
@@ -81,9 +62,7 @@
                   isi ulang
                   paket data untuk anda yang butuh kuota internet dengan harga murah, pembayaran BPJS,
                   Pembayaran PLN,
-                  cicilan, tagihan Telkom, dan PDAM semua dengan proses yang sangat mudah, cepat, dan
-                  customer service
-                  yang aktif pada Senin - Minggu pukul 08.00 - 22.00 WIB.
+                  cicilan, tagihan Telkom, dan PDAM semua dengan proses yang sangat mudah dan praktis.
                 </p>
               </div>
             </li>

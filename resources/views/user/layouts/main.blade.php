@@ -50,7 +50,7 @@
                           <strong>Email :</strong> maupulsa2021@gmail.com<br>
                       </p>
                       <div class="social-links mt-3">
-                          <a href="https://www.instagram.com/mau.pulsa/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                          <a href="https://www.instagram.com/mau.pulsa/" class="instagram" target="blank"><i class="bx bxl-instagram"></i></a>
                           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>

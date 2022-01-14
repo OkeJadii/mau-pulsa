@@ -12,8 +12,8 @@
         <li class="dropdown"><a href="#" class="{{ Request::is('pulsa') ? 'active' : ''}} {{ Request::is('provider') ? 'active' : ''}}"><span>Product</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="/provider">Pulsa</a></li>
-            <li><a href="/pln">PLN</a></li>
             <li><a href="/ewallet">E-Wallet</a></li>
+            <li><a href="/blank">PLN</a></li>
             <li><a href="/blank">Paket Data</a></li>
           </ul>
         </li>

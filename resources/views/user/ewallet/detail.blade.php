@@ -13,7 +13,7 @@
       <div class="faq-list">
         <ul>
           <li data-aos="fade-up">
-            <i class="bi bi-check-circle icon-check"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Detail Pembelian Pulsa<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <i class="bi bi-check-circle icon-check"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Detail Top Up Ewallet<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
               <div class="faq-list">
                 <ul>
@@ -22,7 +22,7 @@
                     <b>
                       <p class="">Nama Produk : </p>
                     </b>
-                    <h5 class=" fw-normal ms-2 mt-2 mb-3">Pulsa {{ $provider }}</h5>
+                    <h5 class=" fw-normal ms-2 mt-2 mb-3">{{ $ewallet }}</h5>
                     <hr>
                     <b>
                       <p class="">No Handphone :</p>
@@ -55,7 +55,7 @@
                 <ul>
                   <hr>
                   <li data-aos="fade-up">
-                  <form action="/pulsa/transaction" method="POST" name="mp-transaction">
+                  <form action="/ewallet/transaction" method="POST" name="mp-transaction">
                     @csrf
                     <b>
                       <p>Masukkan Alamat Email Anda</p>
@@ -79,7 +79,7 @@
             </div>
             <div class="card-body">
 
-                <input type="hidden" name="produk" value="{{ $provider }}">
+                <input type="hidden" name="produk" value="{{ $ewallet }}">
                 <input type="hidden" name="no_pelanggan" value="{{ $noHp }}">
                 <input type="hidden" name="nominal" value="{{ $nominal }}">
                 <input type="hidden" name="harga" value="{{ $harga }}">

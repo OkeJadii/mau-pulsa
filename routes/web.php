@@ -12,6 +12,8 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserPulsaController;
 use App\Http\Controllers\UserEwalletController;
 use App\Http\Controllers\EwalletPriceController;
+use App\Http\Controllers\TransactionController;
+use App\Models\Transaction;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,11 +46,14 @@ Route::get('/admin', function () {
     $providers = $providers->take(4);
     $user = User::all();
     $user = $user->take(3);
+    $transaction = Transaction::all();
+    $transaction = $transaction->take(4);
     return view('admin.index', [
         "title" => "Dashboard",
         "providers" => $providers,
         "ewallets" => Ewallet::all(),
-        "users" => $user
+        "users" => $user,
+        "transactions" => $transaction
     ]);
 })->middleware('admin');
 
@@ -56,6 +61,7 @@ Route::resource('/admin/pulsa', PulsaController::class)->middleware('admin');
 Route::resource('/admin/provider', ProviderController::class)->middleware('admin');
 Route::resource('/admin/ewallet', EwalletController::class)->middleware('admin');
 Route::resource('/admin/ewalletprice', EwalletPriceController::class)->middleware('admin');
+Route::resource('/admin/transaction', TransactionController::class)->middleware('admin');
 
 // PULSA
 Route::get('/provider', function () {
@@ -64,7 +70,6 @@ Route::get('/provider', function () {
         "providers" => Provider::all()
     ]);
 });
-
 Route::get('/pulsa', [UserPulsaController::class, 'index']);
 Route::post('/pulsa/detail', [UserPulsaController::class, 'detail']);
 Route::post('/pulsa/transaction', [UserPulsaController::class, 'transaction']);
@@ -75,12 +80,6 @@ Route::get('/bayar/pulsa', function () {
     ]);
 });
 
-// PLN
-Route::get('/pln', function () {
-    return view('user.pln.index', [
-        "title" => "PLN"
-    ]);
-});
 
 // EWALLET
 Route::get('/ewallet', function () {
@@ -91,13 +90,23 @@ Route::get('/ewallet', function () {
 });
 Route::get('/ewalletprice', [UserEwalletController::class, 'index']);
 Route::post('/ewallet/detail', [UserEwalletController::class, 'detail']);
+Route::post('/ewallet/transaction', [UserEwalletController::class, 'transaction']);
 
-Route::get('/history', function () {
-    return view('user.history.index', [
-        "title" => "Riwayat Transaksi"
+Route::get('/bayar/ewallet', function () {
+    return view('user.ewallet.bayar', [
+        "title" => "Pembayaran Ewallet"
     ]);
 });
 
+//HISTORY
+Route::get('/history', function () {
+    return view('user.history.index', [
+        "title" => "Riwayat Transaksi",
+        "transactions" => Transaction::latest()->where('user_id', auth()->user()->id)->get()
+    ]);
+});
+
+//BLANK PAGE
 Route::get('/blank', function () {
     return view('user.blank', [
         "title" => "Coming Soon"

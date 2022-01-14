@@ -23,7 +23,7 @@ class EwalletSeeder extends Seeder
             'slug' => 'gopay'
         ]);
         Ewallet::create([
-            'name' => 'Shopee Pay',
+            'name' => 'ShopeePay',
             'slug' => 'shopee-pay'
         ]);
     }

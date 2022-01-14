@@ -17,11 +17,12 @@ class CreateTransactionsTable extends Migration
             $table->id();
             $table->foreignId('user_id')->nullable();
             $table->string('produk');
+            $table->string('jenis');
             $table->string('no_pelanggan');
             $table->string('nominal');
             $table->string('harga');
             $table->string('email');
-            $table->string('status')->default("Verifikasi");
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }

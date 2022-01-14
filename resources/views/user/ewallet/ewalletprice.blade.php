@@ -6,6 +6,7 @@
 </header>
 <main id="main">
     <section id="faq" class="faq section-bg">
+      @auth
       <div class="container">
         <div class="section-title" data-aos="fade-up">
           <p class="d-inline">TOP UP SALDO {{ $ewallet }}</p>  <img src="{{ asset('storage/' . $icon) }}" alt="{{ $title}}" width="70px" class="ms-1 pb-3">
@@ -67,6 +68,20 @@
           </div>
         </form>
       </div>
+      @else
+      <div class="container">
+        <div class="section-title-capitalize p-0" data-aos="fade-up">
+            <h3 class="text-center">Login Terlebih Dahulu Sebelum Melakukan Transaksi!</h3>
+        </div>
+        <div class="container d-flex justify-content-center" data-aos="fade-up">
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center img-fluid container">
+                    <img src="img/login.png" alt="" class="w-75">
+                </div>
+            </div>
+        </div>
+      </div>
+      @endauth
     </section>
     <!-- End F.A.Q Section -->
   </main>
