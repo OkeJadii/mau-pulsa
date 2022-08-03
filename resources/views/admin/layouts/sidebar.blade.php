@@ -52,7 +52,7 @@
   </li>
 
   <!-- Nav Item - Utilities Collapse Menu -->
-  <li class="nav-item">
+  <li class="nav-item {{ Request::is('admin/transaction') ? 'active' : ''}}">
     <a class="nav-link" href="/admin/transaction">
       <i class="fas fa-receipt"></i>
       <span>Transactions</span></a
